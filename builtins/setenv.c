@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../minishell.h"
+#include "minishell.h"
 
 int		ft_replace_env(char *env, char *value)
 {

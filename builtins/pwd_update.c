@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../minishell.h"
+#include "minishell.h"
 
 void	path_back(char *new_pwd)
 {

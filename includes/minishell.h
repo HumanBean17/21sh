@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:13 by mmarti            #+#    #+#             */
-/*   Updated: 2019/08/26 20:34:07 by mmarti           ###   ########.fr       */
+/*   Updated: 2019/09/07 16:34:01 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 # define MINISHELL_H
 # define PATH_MAX 1024
 # include <stdlib.h>
-# include "libft/libft.h"
+# include "libft.h"
 # include <string.h>
 # include <unistd.h>
 # include <sys/stat.h>
 # include <dirent.h>
 # include <signal.h>
-# include "error/error.h"
+# include "error.h"
 # include <termios.h>
 
 pid_t	g_pid;
@@ -34,6 +34,7 @@ typedef struct	s_envfl
 	char		**save_environ;
 }				t_envfl;
 
+void			set_attr(void);
 void			ft_parse(int ac, char **av);
 char			*ft_pathjoin(char *s1, char *s2);
 void			ft_cd(int ac, char **new_dir);

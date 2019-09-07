@@ -1,22 +1,20 @@
 LIB = libft/libft.a
 
-HEADER = ./minishell.h
+HEADER = ./includes
 
-SRC_BUILT = builtins/cd/chdir.c builtins/cd/pwd_update.c builtins/echo/echo.c \
-			builtins/env/env.c builtins/env/env2.c builtins/pwd/pwd.c \
-			builtins/setenv/setenv.c builtins/unsetenv/unsetenv.c \
+SRC_BUILT = ./builtins/*.c
 
-SRC_TTY = tty/set_attr.c
+SRC_TTY = ./tty/*.c
 
-SRC_EXEC = execute/execute.c
+SRC_EXEC = ./execute/*.c
 
-SRC_PARSE = parse/parse.c
+SRC_PARSE = ./parse/*.c
 
-SRC_SIGNAL = signal/signal.c
+SRC_SIGNAL = ./signal/*.c
 
-SRC_ERR = error/perror.c
+SRC_ERR = error/*.c
 
-SRC_SUP = sup/support.c
+SRC_SUP = sup/*.c
 
 SRC =	$(SRC_BUILT) \
 		$(SRC_EXEC) \
@@ -24,26 +22,31 @@ SRC =	$(SRC_BUILT) \
 		$(SRC_SIGNAL) \
 		$(SRC_SUP) \
 		$(SRC_ERR) \
-		main.c
+		$(SRC_TTY)
 
-OBJ =   chdir.o echo.o env.o env2.o execute.o parse.o perror.o pwd.o \
-        pwd_update.o setenv.o signal.o support.o unsetenv.o main.o
+OBJ =   *.o
 
 NAME = minishell
 
-GCC = gcc -Wall -Wextra -Werror
+GCC = gcc
 
-all: $(NAME)
-$(NAME): $(LIB) $(OBJ)
-	$(GCC) -o $(NAME) -I $(HEADER) -L. $(LIB) $(OBJ)
+all: $(OBJ) $(LIB) $(NAME)
+
+$(NAME):
+	$(GCC) -o $(NAME) -I $(HEADER) $(OBJ) -L. $(LIB)
+
 $(OBJ):
-	gcc -c $(SRC)
+	gcc -c $(SRC) -I $(HEADER)
+
 $(LIB):
 	make -C ./libft
+
 clean:
 	rm -rf $(OBJ)
 	make clean -C ./libft
+
 fclean: clean
 	rm -rf $(NAME)
 	make fclean -C ./libft
+
 re: fclean all
