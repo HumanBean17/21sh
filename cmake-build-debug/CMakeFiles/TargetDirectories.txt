@@ -1,0 +1,3 @@
+/Users/lcrawn/new_21sh/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lcrawn/new_21sh/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lcrawn/new_21sh/cmake-build-debug/CMakeFiles/new_21sh.dir
