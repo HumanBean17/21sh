@@ -4,8 +4,6 @@ HEADER = ./includes
 
 SRC_BUILT = ./builtins/*.c
 
-SRC_TTY = ./tty/*.c
-
 SRC_EXEC = ./execute/*.c
 
 SRC_PARSE = ./parse/*.c

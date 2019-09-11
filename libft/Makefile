@@ -24,7 +24,7 @@ HFILE = libft.h
 all: $(NAME)
 
 $(NAME):
-	gcc -Wall -Werror -Wextra -I $(HFILE) -c $(CFILE)
+	gcc -Wall -Werror -Wextra -I .$(HFILE) -c $(CFILE)
 	ar rc $(NAME) $(OFILE)
 	ranlib $(NAME)
 

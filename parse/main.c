@@ -47,7 +47,6 @@ int	main(int argc, char **argv, char **envp)
 	if (argc > 1)
 		return (0);
 	(void)argv;
-	set_attr();
 	ft_signal();
 	g_environ = ft_envcpy(envp);
 	buff_size = 256;

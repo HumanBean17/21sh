@@ -22,6 +22,7 @@
 # include <signal.h>
 # include "error.h"
 # include <termios.h>
+# include <sys/wait.h>
 
 pid_t	g_pid;
 char	**g_environ;
