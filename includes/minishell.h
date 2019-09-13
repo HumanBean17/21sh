@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:13 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/07 16:34:01 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/13 09:13:38 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,14 @@
 # include <signal.h>
 # include "error.h"
 # include <termios.h>
+# include <curses.h>
+# include <term.h>
+
+#include <stdio.h>
 
 pid_t	g_pid;
 char	**g_environ;
-struct termios g_save_tty;
+struct termios g_tty;
 
 typedef struct	s_envfl
 {
@@ -34,7 +38,7 @@ typedef struct	s_envfl
 	char		**save_environ;
 }				t_envfl;
 
-void			set_attr(void);
+void			enable_raw(void);
 void			ft_parse(int ac, char **av);
 char			*ft_pathjoin(char *s1, char *s2);
 void			ft_cd(int ac, char **new_dir);
@@ -51,7 +55,7 @@ void			ft_env(int ac, char **com);
 int				add_env(char *env, char *value);
 void			ft_do(char **inp);
 char			*search_bin(char *filename, char *path);
-void			free_tab(char **tab, int i);
+void			free_tab(char **ta, int i);
 int				env_err();
 char			**empty_cpy();
 void			pwd_update(char *new_dir);

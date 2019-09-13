@@ -37,13 +37,13 @@ char	**ft_envcpy(char **environ)
 	return (new);
 }
 
-void	free_tab(char **tab, int i)
+void	free_tab(char **ta, int i)
 {
 	if (i < 0)
 		return ;
 	while (i >= 0)
-		free(tab[i--]);
-	free(tab);
+		free(ta[i--]);
+	free(ta);
 }
 
 int		ft_realloc(char **buf, size_t buff_size)
