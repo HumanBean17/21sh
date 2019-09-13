@@ -12,6 +12,8 @@ SRC_SIGNAL = ./signal/*.c
 
 SRC_ERR = error/*.c
 
+SRC_ANAL = analyzer/*.c
+
 SRC_SUP = sup/*.c
 
 SRC =	$(SRC_BUILT) \
@@ -20,7 +22,7 @@ SRC =	$(SRC_BUILT) \
 		$(SRC_SIGNAL) \
 		$(SRC_SUP) \
 		$(SRC_ERR) \
-		$(SRC_TTY)
+		$(SRC_ANAL)
 
 OBJ =   *.o
 

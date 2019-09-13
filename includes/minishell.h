@@ -13,6 +13,7 @@
 #ifndef MINISHELL_H
 # define MINISHELL_H
 # define PATH_MAX 1024
+# include "analyzer.h"
 # include <stdlib.h>
 # include "libft.h"
 # include <string.h>
