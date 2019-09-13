@@ -49,7 +49,7 @@ int	main(int argc, char **argv, char **envp)
 	tmp = tokenize(argv[1]);
 	while (tmp)
 	{
-		printf("%s\n", tmp->val);
+		ft_printf("%s\n", tmp->val);
 		tmp = tmp->next;
 	}
 	return (0);

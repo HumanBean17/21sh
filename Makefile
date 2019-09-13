@@ -12,7 +12,7 @@ SRC_SIGNAL = ./signal/*.c
 
 SRC_ERR = error/*.c
 
-SRC_ANAL = analyzer/*.c
+SRC_ANAL = analyzer/lexer.c analyzer/lists.c
 
 SRC_SUP = sup/*.c
 
@@ -30,7 +30,7 @@ NAME = minishell
 
 GCC = gcc
 
-all: $(OBJ) $(LIB) $(NAME)
+all: $(LIB) $(OBJ) $(NAME)
 
 $(NAME):
 	$(GCC) -o $(NAME) -I $(HEADER) $(OBJ) -L. $(LIB)

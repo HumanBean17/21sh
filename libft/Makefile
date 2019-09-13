@@ -12,12 +12,13 @@
 
 NAME = libft.a
 
-CFILE = ft_memalloc.c ft_bzero.c ft_strcat.c ft_strclen.c ft_strwlen.c \
+CFILE = ft_memalloc.c ft_bzero.c ft_strclen.c ft_strwlen.c \
 		ft_strcmp.c ft_memcpy.c ft_strdup.c ft_strchr.c ft_strsplit.c \
 		ft_putchar_fd.c ft_strlen.c ft_putstr_fd.c ft_count_str.c ft_strtok.c \
-		ft_strwdup.c ft_memchr.c ft_strncmp.c ft_strsub.c ft_strtrim.c
+		ft_strwdup.c ft_memchr.c ft_strncmp.c ft_strsub.c ft_strtrim.c \
+		ft_strjoin.c ft_printf/*.c
 
-OFILE = $(CFILE:.c=.o)
+OFILE = *.o
 
 HFILE = ./includes
 
