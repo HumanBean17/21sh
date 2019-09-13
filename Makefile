@@ -26,16 +26,16 @@ SRC =	$(SRC_BUILT) \
 
 OBJ =   *.o
 
-NAME = minishell
+NAME = 21sh
 
 GCC = gcc
 
 all: $(OBJ) $(LIB) $(NAME)
 
-$(NAME):
-	$(GCC) -o $(NAME) -I $(HEADER) $(OBJ) -L. $(LIB)
+$(NAME): $(OBJ)
+	$(GCC) -o $(NAME) -I $(HEADER) $(OBJ) -L. $(LIB) -ltermcap
 
-$(OBJ):
+$(OBJ): $(SRC)
 	gcc -c $(SRC) -I $(HEADER)
 
 $(LIB):
