@@ -26,9 +26,9 @@ SRC =	$(SRC_BUILT) \
 
 OBJ =   *.o
 
-NAME = minishell
+NAME = 21sh
 
-GCC = gcc
+GCC = gcc -Wall -Wextra -Werror
 
 all: $(LIB) $(OBJ) $(NAME)
 
