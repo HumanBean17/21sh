@@ -18,7 +18,7 @@
 # define ENOCOM 4
 # define EFEWARGS 5
 # define EMANYARGS 6
-# define EBADOPT 7
+# define EUNEXPTOKEN 7
 
 void	ft_error(char const *s1, int code, char const *s2);
 
