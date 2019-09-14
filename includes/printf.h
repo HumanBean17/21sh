@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#ifndef PRINTF_H
+# define PRINTF_H
 
 # include <limits.h>
 # include <unistd.h>
