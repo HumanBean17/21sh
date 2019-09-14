@@ -21,5 +21,6 @@
 # define EBADOPT 7
 
 void	ft_error(char const *s1, int code, char const *s2);
+void	die(const char *s);
 
 #endif

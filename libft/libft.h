@@ -17,6 +17,8 @@
 # include <string.h>
 # include <unistd.h>
 
+void	ft_strdel(char **as);
+int 				ft_isprint(int c);
 void				ft_bzero(void *destination, size_t n);
 void				*ft_memcpy(void *destination,
 		const void *source, size_t n);

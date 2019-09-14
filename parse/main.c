@@ -6,37 +6,34 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:21 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/13 12:16:36 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/14 11:16:50 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
+#include <ctype.h>
 
 static int ft_loop()
 {
-	char 	buf;
-	size_t	i;
+	char 			buf;
+	t_config		config;
+	struct 	termios orig_termios;
 
-	i = 0;
-	enable_raw();
-	while ((read(0, &buf, 1)))
+	orig_termios = enable_raw();
+	config = init_edit();
+	open_edit(config);
+	while (1)
 	{
+		buf = '\0';
+		read(STDIN_FILENO, &buf, 1);
+		if (ft_isprint(buf) && buf != 27)
+			write(STDOUT_FILENO, &buf, 1);
 		if (buf == '\n')
 		{
 			write(1, "\n", 1);
 			return (1);
 		}
-		i++;
 	}
-	/*if (buf[i] == '\n')
-		buf[i] = 0;
-	else
-		write(1, "\n", 1);
-	if (*buf)
-	{
-		ft_do(ft_strsplit(buf, ';'));
-		ft_bzero(buf, ft_strlen(buf));
-	}*/
 	return (0);
 }
 

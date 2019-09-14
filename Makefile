@@ -16,13 +16,19 @@ SRC_ERR = error/*.c
 
 SRC_SUP = sup/*.c
 
+SRC_EDT = line_edit/*.c
+
+SRC_RLC = realloc/*.c
+
 SRC =	$(SRC_BUILT) \
 		$(SRC_EXEC) \
 		$(SRC_PARSE) \
 		$(SRC_SIGNAL) \
 		$(SRC_SUP) \
 		$(SRC_ERR) \
-		$(SRC_TTY)
+		$(SRC_TTY) \
+		$(SRC_EDT) \
+		$(SRC_RLC)
 
 OBJ =   *.o
 

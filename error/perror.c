@@ -12,6 +12,12 @@
 
 #include "minishell.h"
 
+void			die(const char *s)
+{
+	perror(s);
+	exit(1);
+}
+
 static	void	puterr(int code)
 {
 	static char *errors[6];

@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:13 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/13 09:13:38 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/14 13:21:11 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,29 @@
 
 pid_t	g_pid;
 char	**g_environ;
-struct termios g_tty;
+
+typedef struct 	s_draw
+{
+	char 		*buf;
+	int 		len;
+}				t_draw;
+
+typedef struct  s_erow
+{
+	int 		size;
+	char 		*chars;
+}				t_erow;
+
+typedef struct 	s_config
+{
+	int cx;
+	int cy;
+	int screenrows;
+	int screencols;
+	int numrows;
+	t_erow row;
+	struct termios orig_termios;
+}				t_config;
 
 typedef struct	s_envfl
 {
@@ -38,7 +60,11 @@ typedef struct	s_envfl
 	char		**save_environ;
 }				t_envfl;
 
-void			enable_raw(void);
+/* edit line funcs */
+struct termios			enable_raw(void);
+void					open_edit(t_config config);
+t_config				init_edit();
+
 void			ft_parse(int ac, char **av);
 char			*ft_pathjoin(char *s1, char *s2);
 void			ft_cd(int ac, char **new_dir);

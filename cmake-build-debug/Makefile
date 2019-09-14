@@ -447,6 +447,33 @@ libft/ft_count_str.c.s:
 	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/libft/ft_count_str.c.s
 .PHONY : libft/ft_count_str.c.s
 
+libft/ft_isprint.o: libft/ft_isprint.c.o
+
+.PHONY : libft/ft_isprint.o
+
+# target to build an object file
+libft/ft_isprint.c.o:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/libft/ft_isprint.c.o
+.PHONY : libft/ft_isprint.c.o
+
+libft/ft_isprint.i: libft/ft_isprint.c.i
+
+.PHONY : libft/ft_isprint.i
+
+# target to preprocess a source file
+libft/ft_isprint.c.i:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/libft/ft_isprint.c.i
+.PHONY : libft/ft_isprint.c.i
+
+libft/ft_isprint.s: libft/ft_isprint.c.s
+
+.PHONY : libft/ft_isprint.s
+
+# target to generate assembly for a file
+libft/ft_isprint.c.s:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/libft/ft_isprint.c.s
+.PHONY : libft/ft_isprint.c.s
+
 libft/ft_memalloc.o: libft/ft_memalloc.c.o
 
 .PHONY : libft/ft_memalloc.o
@@ -690,6 +717,33 @@ libft/ft_strcmp.c.s:
 	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/libft/ft_strcmp.c.s
 .PHONY : libft/ft_strcmp.c.s
 
+libft/ft_strdel.o: libft/ft_strdel.c.o
+
+.PHONY : libft/ft_strdel.o
+
+# target to build an object file
+libft/ft_strdel.c.o:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/libft/ft_strdel.c.o
+.PHONY : libft/ft_strdel.c.o
+
+libft/ft_strdel.i: libft/ft_strdel.c.i
+
+.PHONY : libft/ft_strdel.i
+
+# target to preprocess a source file
+libft/ft_strdel.c.i:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/libft/ft_strdel.c.i
+.PHONY : libft/ft_strdel.c.i
+
+libft/ft_strdel.s: libft/ft_strdel.c.s
+
+.PHONY : libft/ft_strdel.s
+
+# target to generate assembly for a file
+libft/ft_strdel.c.s:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/libft/ft_strdel.c.s
+.PHONY : libft/ft_strdel.c.s
+
 libft/ft_strdup.o: libft/ft_strdup.c.o
 
 .PHONY : libft/ft_strdup.o
@@ -906,6 +960,60 @@ libft/ft_strwlen.c.s:
 	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/libft/ft_strwlen.c.s
 .PHONY : libft/ft_strwlen.c.s
 
+line_edit/draw.o: line_edit/draw.c.o
+
+.PHONY : line_edit/draw.o
+
+# target to build an object file
+line_edit/draw.c.o:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/line_edit/draw.c.o
+.PHONY : line_edit/draw.c.o
+
+line_edit/draw.i: line_edit/draw.c.i
+
+.PHONY : line_edit/draw.i
+
+# target to preprocess a source file
+line_edit/draw.c.i:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/line_edit/draw.c.i
+.PHONY : line_edit/draw.c.i
+
+line_edit/draw.s: line_edit/draw.c.s
+
+.PHONY : line_edit/draw.s
+
+# target to generate assembly for a file
+line_edit/draw.c.s:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/line_edit/draw.c.s
+.PHONY : line_edit/draw.c.s
+
+line_edit/edit.o: line_edit/edit.c.o
+
+.PHONY : line_edit/edit.o
+
+# target to build an object file
+line_edit/edit.c.o:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/line_edit/edit.c.o
+.PHONY : line_edit/edit.c.o
+
+line_edit/edit.i: line_edit/edit.c.i
+
+.PHONY : line_edit/edit.i
+
+# target to preprocess a source file
+line_edit/edit.c.i:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/line_edit/edit.c.i
+.PHONY : line_edit/edit.c.i
+
+line_edit/edit.s: line_edit/edit.c.s
+
+.PHONY : line_edit/edit.s
+
+# target to generate assembly for a file
+line_edit/edit.c.s:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/line_edit/edit.c.s
+.PHONY : line_edit/edit.c.s
+
 parse/main.o: parse/main.c.o
 
 .PHONY : parse/main.o
@@ -959,6 +1067,33 @@ parse/parse.s: parse/parse.c.s
 parse/parse.c.s:
 	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/parse/parse.c.s
 .PHONY : parse/parse.c.s
+
+realloc/realloc.o: realloc/realloc.c.o
+
+.PHONY : realloc/realloc.o
+
+# target to build an object file
+realloc/realloc.c.o:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/realloc/realloc.c.o
+.PHONY : realloc/realloc.c.o
+
+realloc/realloc.i: realloc/realloc.c.i
+
+.PHONY : realloc/realloc.i
+
+# target to preprocess a source file
+realloc/realloc.c.i:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/realloc/realloc.c.i
+.PHONY : realloc/realloc.c.i
+
+realloc/realloc.s: realloc/realloc.c.s
+
+.PHONY : realloc/realloc.s
+
+# target to generate assembly for a file
+realloc/realloc.c.s:
+	$(MAKE) -f CMakeFiles/new_21sh.dir/build.make CMakeFiles/new_21sh.dir/realloc/realloc.c.s
+.PHONY : realloc/realloc.c.s
 
 signal/signal.o: signal/signal.c.o
 
@@ -1086,6 +1221,9 @@ help:
 	@echo "... libft/ft_count_str.o"
 	@echo "... libft/ft_count_str.i"
 	@echo "... libft/ft_count_str.s"
+	@echo "... libft/ft_isprint.o"
+	@echo "... libft/ft_isprint.i"
+	@echo "... libft/ft_isprint.s"
 	@echo "... libft/ft_memalloc.o"
 	@echo "... libft/ft_memalloc.i"
 	@echo "... libft/ft_memalloc.s"
@@ -1113,6 +1251,9 @@ help:
 	@echo "... libft/ft_strcmp.o"
 	@echo "... libft/ft_strcmp.i"
 	@echo "... libft/ft_strcmp.s"
+	@echo "... libft/ft_strdel.o"
+	@echo "... libft/ft_strdel.i"
+	@echo "... libft/ft_strdel.s"
 	@echo "... libft/ft_strdup.o"
 	@echo "... libft/ft_strdup.i"
 	@echo "... libft/ft_strdup.s"
@@ -1137,12 +1278,21 @@ help:
 	@echo "... libft/ft_strwlen.o"
 	@echo "... libft/ft_strwlen.i"
 	@echo "... libft/ft_strwlen.s"
+	@echo "... line_edit/draw.o"
+	@echo "... line_edit/draw.i"
+	@echo "... line_edit/draw.s"
+	@echo "... line_edit/edit.o"
+	@echo "... line_edit/edit.i"
+	@echo "... line_edit/edit.s"
 	@echo "... parse/main.o"
 	@echo "... parse/main.i"
 	@echo "... parse/main.s"
 	@echo "... parse/parse.o"
 	@echo "... parse/parse.i"
 	@echo "... parse/parse.s"
+	@echo "... realloc/realloc.o"
+	@echo "... realloc/realloc.i"
+	@echo "... realloc/realloc.s"
 	@echo "... signal/signal.o"
 	@echo "... signal/signal.i"
 	@echo "... signal/signal.s"

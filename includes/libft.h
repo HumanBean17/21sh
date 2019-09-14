@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/11 17:41:30 by mmarti            #+#    #+#             */
-/*   Updated: 2019/08/26 20:30:50 by mmarti           ###   ########.fr       */
+/*   Updated: 2019/09/14 10:18:49 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 # include <string.h>
 # include <unistd.h>
 
+void				ft_strdel(char **as);
+int					ft_isprint(int c);
 void				ft_bzero(void *destination, size_t n);
 void				*ft_memcpy(void *destination,
 		const void *source, size_t n);

@@ -44,4 +44,4 @@ add_executable(new_21sh
         parse/parse.c
         signal/signal.c
         sup/support.c
-        tty/set_attr.c)
+        tty/set_attr.c libft/ft_isprint.c line_edit/edit.c line_edit/draw.c realloc/realloc.c libft/ft_strdel.c)

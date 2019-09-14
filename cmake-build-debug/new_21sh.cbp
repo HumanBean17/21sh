@@ -129,6 +129,9 @@
 		<Unit filename="/Users/lcrawn/21sh/libft/ft_count_str.c">
 			<Option target="new_21sh"/>
 		</Unit>
+		<Unit filename="/Users/lcrawn/21sh/libft/ft_isprint.c">
+			<Option target="new_21sh"/>
+		</Unit>
 		<Unit filename="/Users/lcrawn/21sh/libft/ft_memalloc.c">
 			<Option target="new_21sh"/>
 		</Unit>
@@ -154,6 +157,9 @@
 			<Option target="new_21sh"/>
 		</Unit>
 		<Unit filename="/Users/lcrawn/21sh/libft/ft_strcmp.c">
+			<Option target="new_21sh"/>
+		</Unit>
+		<Unit filename="/Users/lcrawn/21sh/libft/ft_strdel.c">
 			<Option target="new_21sh"/>
 		</Unit>
 		<Unit filename="/Users/lcrawn/21sh/libft/ft_strdup.c">
@@ -183,10 +189,19 @@
 		<Unit filename="/Users/lcrawn/21sh/libft/libft.h">
 			<Option target="new_21sh"/>
 		</Unit>
+		<Unit filename="/Users/lcrawn/21sh/line_edit/draw.c">
+			<Option target="new_21sh"/>
+		</Unit>
+		<Unit filename="/Users/lcrawn/21sh/line_edit/edit.c">
+			<Option target="new_21sh"/>
+		</Unit>
 		<Unit filename="/Users/lcrawn/21sh/parse/main.c">
 			<Option target="new_21sh"/>
 		</Unit>
 		<Unit filename="/Users/lcrawn/21sh/parse/parse.c">
+			<Option target="new_21sh"/>
+		</Unit>
+		<Unit filename="/Users/lcrawn/21sh/realloc/realloc.c">
 			<Option target="new_21sh"/>
 		</Unit>
 		<Unit filename="/Users/lcrawn/21sh/signal/signal.c">

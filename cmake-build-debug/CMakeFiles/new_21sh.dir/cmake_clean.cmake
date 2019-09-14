@@ -33,6 +33,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/new_21sh.dir/signal/signal.c.o"
   "CMakeFiles/new_21sh.dir/sup/support.c.o"
   "CMakeFiles/new_21sh.dir/tty/set_attr.c.o"
+  "CMakeFiles/new_21sh.dir/libft/ft_isprint.c.o"
+  "CMakeFiles/new_21sh.dir/line_edit/edit.c.o"
+  "CMakeFiles/new_21sh.dir/line_edit/draw.c.o"
+  "CMakeFiles/new_21sh.dir/realloc/realloc.c.o"
+  "CMakeFiles/new_21sh.dir/libft/ft_strdel.c.o"
   "new_21sh.pdb"
   "new_21sh"
 )
