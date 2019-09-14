@@ -3,7 +3,7 @@
 
 int		isop(char c)
 {
-	if (c == ';' || c == '|' || c == '(' || c == ')')
+	if (c == ';' || c == '|' || c == '(' || c == ')' || c == '>')
 		return (1);
 	else
 		return (0);
@@ -34,6 +34,8 @@ t_token *tokendup(char *str, t_token *lst)
 	while (str[i] && !(isop(str[i])))
 		i++;
 	if (!i)
+		i++;
+	if (isop(str[i + 1]) > 0)
 		i++;
 	if (!tmp)
 		lst = new_token(ft_strsub(str, 0, i));

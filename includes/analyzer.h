@@ -1,15 +1,20 @@
 #ifndef ANALYZER_H
 #define ANALYZER_H
 
-#define TEXEX 255
-# define TBRANCHOPEN 299
-# define TBRANCHCLOSE 298
-#define TPIPE 256
-#define TSEMICOL 300
+# define TCONST 100
+# define TEXEX 101
+# define TBRANCHOPEN 198
+# define TBRANCHCLOSE 197
+# define TPIPE 150
+# define TREDIRECT 250
+# define TREDIRECTX2 350
+# define TSEMICOL 199
+
+typedef unsigned short t_type;
 
 typedef struct		s_token
 {
-    short			type;
+    t_type			type;
     char			*val;
     struct s_token	*next;
 }					t_token;

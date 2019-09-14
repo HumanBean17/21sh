@@ -21,6 +21,13 @@ short get_token_type(char const *str)
 		return (TSEMICOL);
 	else if (*str == ')')
 		return (TBRANCHCLOSE);
+	else if (*str == '>')
+	{
+		if (*str + 1 == '>')
+			return (TREDIRECTX2);
+		else
+			return (TREDIRECT);
+	}
 	else
 		return (TEXEX);
 }
