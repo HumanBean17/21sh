@@ -44,15 +44,7 @@ int	main(int argc, char **argv, char **envp)
 {
 	char	*buf;
 	size_t	buff_size;
-	t_token *tmp;
 
-	tmp = tokenize(argv[1]);
-	while (tmp)
-	{
-		ft_printf("%s\n", tmp->val);
-		tmp = tmp->next;
-	}
-	return (0);
 	if (argc > 1)
 		return (0);
 	(void)argv;

@@ -30,13 +30,7 @@ t_token *tokendup(char *str, t_token *lst)
 	int i;
 
 	tmp = get_last(lst);
-	i = 0;
-	while (str[i] && !(isop(str[i])))
-		i++;
-	if (!i)
-		i++;
-	if (isop(str[i + 1]) > 0)
-		i++;
+	i = skip_token(str) - str;
 	if (!tmp)
 		lst = new_token(ft_strsub(str, 0, i));
 	else

@@ -12,7 +12,7 @@ SRC_SIGNAL = ./signal/*.c
 
 SRC_ERR = error/*.c
 
-SRC_ANAL = analyzer/lexer.c analyzer/lists.c
+SRC_ANAL = analyzer/*.c
 
 SRC_SUP = sup/*.c
 

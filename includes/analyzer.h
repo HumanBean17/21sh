@@ -22,5 +22,6 @@ typedef struct		s_token
 t_token				*get_last(t_token *lst);
 t_token				*new_token(char *str);
 t_token				*tokenize(char *inp);
+int					valid_tokens(t_token *lst);
 
 #endif
