@@ -17,6 +17,9 @@
 # include <string.h>
 # include <unistd.h>
 
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strnew(size_t size);
+void	*ft_memset(void *destination, int c, size_t n);
 void	ft_strdel(char **as);
 int 				ft_isprint(int c);
 void				ft_bzero(void *destination, size_t n);

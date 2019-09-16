@@ -16,18 +16,19 @@
 static int ft_loop()
 {
 	char 			buf;
-	t_config		config;
-	struct 	termios orig_termios;
 
-	orig_termios = enable_raw();
-	config = init_edit();
-	open_edit(config);
 	while (1)
 	{
 		buf = '\0';
 		read(STDIN_FILENO, &buf, 1);
-		if (ft_isprint(buf) && buf != 27)
-			write(STDOUT_FILENO, &buf, 1);
+        edit_refresh();
+		/*if (ft_isprint(buf) && buf != 27)
+		{
+            //write(STDOUT_FILENO, &buf, 1);
+            //append_edit(&buf, 1);
+
+            //write(STDOUT_FILENO, g_E.row->chars, g_E.row->size);
+        }*/
 		if (buf == '\n')
 		{
 			write(1, "\n", 1);
@@ -39,14 +40,21 @@ static int ft_loop()
 
 int	main(int argc, char **argv, char **envp)
 {
+    struct 	termios orig_termios;
+
 	if (argc > 1)
 		return (0);
 	(void)argv;
-	ft_signal();
-	g_environ = ft_envcpy(envp);
+	//ft_signal();
+	//g_environ = ft_envcpy(envp);
+    orig_termios = enable_raw();
+    init_edit();
+    open_edit();
 	ft_putstr_fd("$> ", STDOUT_FILENO);
-	while (ft_loop())
-		ft_putstr_fd("$> ", STDOUT_FILENO);
+	while (ft_loop()) {
+        ft_putstr_fd("$> ", STDOUT_FILENO);
+    }
+	disable_raw(orig_termios);
 	free_tab(g_environ, ft_count_str(g_environ));
 	return (0);
 }

@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.14)
-project(new_21sh C)
+project(21sh C)
 
 set(CMAKE_C_STANDARD 11)
 
 include_directories(includes)
 include_directories(libft)
 
-add_executable(new_21sh
+add_executable(21sh
         builtins/chdir.c
         builtins/echo.c
         builtins/env.c
@@ -22,6 +22,7 @@ add_executable(new_21sh
         includes/minishell.h
         libft/ft_bzero.c
         libft/ft_count_str.c
+        libft/ft_isprint.c
         libft/ft_memalloc.c
         libft/ft_memchr.c
         libft/ft_memcpy.c
@@ -31,6 +32,7 @@ add_executable(new_21sh
         libft/ft_strchr.c
         libft/ft_strclen.c
         libft/ft_strcmp.c
+        libft/ft_strdel.c
         libft/ft_strdup.c
         libft/ft_strlen.c
         libft/ft_strncmp.c
@@ -40,8 +42,11 @@ add_executable(new_21sh
         libft/ft_strwdup.c
         libft/ft_strwlen.c
         libft/libft.h
+        line_edit/draw.c
+        line_edit/edit.c
         parse/main.c
         parse/parse.c
+        realloc/realloc.c
         signal/signal.c
         sup/support.c
-        tty/set_attr.c libft/ft_isprint.c line_edit/edit.c line_edit/draw.c realloc/realloc.c libft/ft_strdel.c)
+        tty/set_attr.c libft/ft_strjoin.c libft/ft_strnew.c libft/ft_memset.c)

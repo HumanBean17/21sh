@@ -1,9 +1,23 @@
 #include "minishell.h"
 
-void	join_draw(t_draw *to_print, char *append, int len)
+void  row_realloc(t_erow **tmp, int len)
 {
-	char *tmp;
+    t_erow *cur;
 
-	tmp = ft_strdup(to_print->buf);
-	ft_strdel(&to_print->buf);
+    cur = (t_erow *)malloc(sizeof(tmp) * len);
+    cur->chars = ft_strdup((*tmp)->chars);
+    cur->size = (*tmp)->size;
+    ft_strdel(&(*tmp)->chars);
+    free(tmp);
+    (*tmp) = cur;
+}
+
+void append(struct s_draw *ab, const char *s, int len)
+{
+    char *new = realloc(ab->b, ab->len + len);
+
+    if (new == NULL) return;
+    memcpy(&new[ab->len], s, len);
+    ab->b = new;
+    ab->len += len;
 }

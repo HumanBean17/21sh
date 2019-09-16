@@ -13,6 +13,8 @@
 #ifndef MINISHELL_H
 # define MINISHELL_H
 # define PATH_MAX 1024
+# define ABUF_INIT {NULL, 0}
+
 # include <stdlib.h>
 # include "libft.h"
 # include <string.h>
@@ -22,6 +24,7 @@
 # include <signal.h>
 # include "error.h"
 # include <termios.h>
+# include <wait.h>
 # include <curses.h>
 # include <term.h>
 
@@ -29,29 +32,30 @@
 
 pid_t	g_pid;
 char	**g_environ;
+struct  s_editorConfig g_E;
 
-typedef struct 	s_draw
+struct 	s_draw
 {
-	char 		*buf;
-	int 		len;
-}				t_draw;
+    char *b;
+    int len;
+};
 
 typedef struct  s_erow
 {
-	int 		size;
 	char 		*chars;
+    int 		size;
 }				t_erow;
 
-typedef struct 	s_config
-{
-	int cx;
-	int cy;
-	int screenrows;
-	int screencols;
-	int numrows;
-	t_erow row;
-	struct termios orig_termios;
-}				t_config;
+struct 	s_editorConfig {
+    int cx;
+    int cy;
+    int rowoff;
+    int screenrows;
+    int screencols;
+    int numrows;
+    t_erow *row;
+    struct termios orig_termios;
+};
 
 typedef struct	s_envfl
 {
@@ -61,9 +65,15 @@ typedef struct	s_envfl
 }				t_envfl;
 
 /* edit line funcs */
-struct termios			enable_raw(void);
-void					open_edit(t_config config);
-t_config				init_edit();
+void                edit_refresh(void);
+void                append_edit(char *s, size_t len);
+void                row_realloc(t_erow **tmp, int len);
+void                append(struct s_draw *ab, const char *s, int len);
+struct termios		enable_raw(void);
+void                draw_rows(struct s_draw *ab);
+void	            disable_raw(struct termios orig_termios);
+void                open_edit();
+void                init_edit();
 
 void			ft_parse(int ac, char **av);
 char			*ft_pathjoin(char *s1, char *s2);
