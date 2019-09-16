@@ -1,34 +1,62 @@
 #include "minishell.h"
 
-void append_edit(char *s, size_t len)
+void    k_move()
 {
-    /*g_E.row = realloc(g_E.row, sizeof(t_erow) * (g_E.numrows + 1));
-    int at = g_E.numrows;
-    g_E.row[at].size = len;
-    g_E.row[at].chars = malloc(len + 1);
-    memcpy(g_E.row[at].chars, s, len);
-    g_E.row[at].chars[len] = '\0';*/
     char *tmp;
+    char *itoa;
+    int   len;
 
-    //write(STDOUT_FILENO, g_E.row->chars, 1);
-    tmp = ft_strdup(g_E.row->chars);
-    ft_strdel(&g_E.row->chars);
-    free(g_E.row);
-    g_E.row = (t_erow *)malloc(sizeof(t_erow));
-    g_E.row->chars = ft_strjoin(tmp, s);
-    g_E.row->size = ft_strlen(g_E.row->chars);
-    //g_E.numrows++;
+    itoa = ft_itoa((int)g_line.x);
+    tmp = ft_strjoin("\x001b[", itoa);
+    len = 4 + (int)ft_strlen(itoa) + 1;
+    ft_strdel(&itoa);
+    itoa = ft_strdup(tmp);
+    ft_strdel(&tmp);
+    tmp = ft_strjoin(itoa, "C");
+    //write(STDOUT_FILENO, tmp, len);
+    ft_strdel(&tmp);
 }
 
-void init_edit()
+void    new_line()
 {
-	g_E.cx = 0;
-	g_E.cy = 0;
-	g_E.rowoff = 0;
-	g_E.screenrows = 1;
-	g_E.screencols = 0;
-	g_E.numrows = 0;
-	g_E.row = NULL;
+    ft_strdel(&g_line.str);
+    g_line.size = 0;
+    g_line.x = 0;
+}
+
+void    insert_ch(char buf)
+{
+    char *tmp;
+    char *sub;
+
+    if (!g_line.str)
+    {
+        g_line.str = ft_strdup(&buf);
+        g_line.x++;
+        g_line.size++;
+    }
+    else
+    {
+        tmp = ft_strsub(g_line.str, 0, g_line.x);
+        sub = ft_strsub(g_line.str, g_line.x, g_line.size - g_line.x);
+        ft_strdel(&g_line.str);
+        g_line.str = ft_strjoin(tmp, &buf);
+        ft_strdel(&tmp);
+        tmp = ft_strdup(g_line.str);
+        ft_strdel(&g_line.str);
+        g_line.str = ft_strjoin(tmp, sub);
+        ft_strdel(&tmp);
+        ft_strdel(&sub);
+        g_line.x++;
+        g_line.size++;
+    }
+}
+
+void    init_edit()
+{
+	g_line.str = NULL;
+	g_line.size = 0;
+	g_line.x = 0;
 }
 
 void open_edit()

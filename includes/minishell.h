@@ -33,6 +33,14 @@
 pid_t	g_pid;
 char	**g_environ;
 struct  s_editorConfig g_E;
+struct  s_line g_line;
+
+struct  s_line
+{
+    char            *str;
+    size_t          size;
+    int        x;
+};
 
 struct 	s_draw
 {
@@ -65,6 +73,9 @@ typedef struct	s_envfl
 }				t_envfl;
 
 /* edit line funcs */
+void    k_move();
+void    new_line();
+void    insert_ch(char buf);
 void                edit_refresh(void);
 void                append_edit(char *s, size_t len);
 void                row_realloc(t_erow **tmp, int len);

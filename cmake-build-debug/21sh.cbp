@@ -184,6 +184,9 @@
 		<Unit filename="/home/humanbean/Desktop/42/21sh/libft/ft_strstr.c">
 			<Option target="21sh"/>
 		</Unit>
+		<Unit filename="/home/humanbean/Desktop/42/21sh/libft/ft_strsub..c">
+			<Option target="21sh"/>
+		</Unit>
 		<Unit filename="/home/humanbean/Desktop/42/21sh/libft/ft_strtok.c">
 			<Option target="21sh"/>
 		</Unit>

@@ -960,6 +960,33 @@ libft/ft_strstr.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_strstr.c.s
 .PHONY : libft/ft_strstr.c.s
 
+libft/ft_strsub..o: libft/ft_strsub..c.o
+
+.PHONY : libft/ft_strsub..o
+
+# target to build an object file
+libft/ft_strsub..c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_strsub..c.o
+.PHONY : libft/ft_strsub..c.o
+
+libft/ft_strsub..i: libft/ft_strsub..c.i
+
+.PHONY : libft/ft_strsub..i
+
+# target to preprocess a source file
+libft/ft_strsub..c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_strsub..c.i
+.PHONY : libft/ft_strsub..c.i
+
+libft/ft_strsub..s: libft/ft_strsub..c.s
+
+.PHONY : libft/ft_strsub..s
+
+# target to generate assembly for a file
+libft/ft_strsub..c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_strsub..c.s
+.PHONY : libft/ft_strsub..c.s
+
 libft/ft_strtok.o: libft/ft_strtok.c.o
 
 .PHONY : libft/ft_strtok.o
@@ -1359,6 +1386,9 @@ help:
 	@echo "... libft/ft_strstr.o"
 	@echo "... libft/ft_strstr.i"
 	@echo "... libft/ft_strstr.s"
+	@echo "... libft/ft_strsub..o"
+	@echo "... libft/ft_strsub..i"
+	@echo "... libft/ft_strsub..s"
 	@echo "... libft/ft_strtok.o"
 	@echo "... libft/ft_strtok.i"
 	@echo "... libft/ft_strtok.s"

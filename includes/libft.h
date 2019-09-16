@@ -17,6 +17,10 @@
 # include <string.h>
 # include <unistd.h>
 
+char			*ft_itoa(int n);
+int     ft_min(int a, int b);
+int     ft_max(int a, int b);
+char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strnew(size_t size);
 void	*ft_memset(void *destination, int c, size_t n);

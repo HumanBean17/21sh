@@ -41,6 +41,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/21sh.dir/libft/ft_strjoin.c.o"
   "CMakeFiles/21sh.dir/libft/ft_strnew.c.o"
   "CMakeFiles/21sh.dir/libft/ft_memset.c.o"
+  "CMakeFiles/21sh.dir/libft/ft_strsub..c.o"
   "21sh.pdb"
   "21sh"
 )

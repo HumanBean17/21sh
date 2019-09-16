@@ -49,4 +49,4 @@ add_executable(21sh
         realloc/realloc.c
         signal/signal.c
         sup/support.c
-        tty/set_attr.c libft/ft_strjoin.c libft/ft_strnew.c libft/ft_memset.c)
+        tty/set_attr.c libft/ft_strjoin.c libft/ft_strnew.c libft/ft_memset.c libft/ft_strsub..c libft/ft_max.c libft/ft_itoa.c)

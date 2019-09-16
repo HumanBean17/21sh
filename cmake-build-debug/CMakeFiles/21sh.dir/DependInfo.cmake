@@ -35,6 +35,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/humanbean/Desktop/42/21sh/libft/ft_strnew.c" "/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles/21sh.dir/libft/ft_strnew.c.o"
   "/home/humanbean/Desktop/42/21sh/libft/ft_strsplit.c" "/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles/21sh.dir/libft/ft_strsplit.c.o"
   "/home/humanbean/Desktop/42/21sh/libft/ft_strstr.c" "/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles/21sh.dir/libft/ft_strstr.c.o"
+  "/home/humanbean/Desktop/42/21sh/libft/ft_strsub..c" "/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles/21sh.dir/libft/ft_strsub..c.o"
   "/home/humanbean/Desktop/42/21sh/libft/ft_strtok.c" "/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles/21sh.dir/libft/ft_strtok.c.o"
   "/home/humanbean/Desktop/42/21sh/libft/ft_strwdup.c" "/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles/21sh.dir/libft/ft_strwdup.c.o"
   "/home/humanbean/Desktop/42/21sh/libft/ft_strwlen.c" "/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles/21sh.dir/libft/ft_strwlen.c.o"
