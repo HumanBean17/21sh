@@ -1,16 +1,4 @@
-/home/humanbean/Desktop/clion-2019.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/humanbean/Desktop/42/21sh
+/Users/lcrawn/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/lcrawn/21sh
 -- Configuring done
-CMake Error at CMakeLists.txt:9 (add_executable):
-  Cannot find source file:
-
-    libft/ft_strsub..c
-
-  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
-  .hpp .hxx .in .txx
-
-
-CMake Error at CMakeLists.txt:9 (add_executable):
-  No SOURCES given to target: 21sh
-
-
--- Build files have been written to: /home/humanbean/Desktop/42/21sh/cmake-build-debug
+-- Generating done
+-- Build files have been written to: /Users/lcrawn/21sh/cmake-build-debug

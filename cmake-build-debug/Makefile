@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/humanbean/Desktop/clion-2019.2.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Users/lcrawn/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /home/humanbean/Desktop/clion-2019.2.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Users/lcrawn/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/humanbean/Desktop/42/21sh
+CMAKE_SOURCE_DIR = /Users/lcrawn/21sh
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/humanbean/Desktop/42/21sh/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lcrawn/21sh/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/humanbean/Desktop/42/21sh/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/humanbean/Desktop/clion-2019.2.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Users/lcrawn/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/humanbean/Desktop/clion-2019.2.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Users/lcrawn/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles /home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lcrawn/21sh/cmake-build-debug/CMakeFiles /Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lcrawn/21sh/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -473,6 +473,60 @@ libft/ft_isprint.s: libft/ft_isprint.c.s
 libft/ft_isprint.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_isprint.c.s
 .PHONY : libft/ft_isprint.c.s
+
+libft/ft_itoa.o: libft/ft_itoa.c.o
+
+.PHONY : libft/ft_itoa.o
+
+# target to build an object file
+libft/ft_itoa.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_itoa.c.o
+.PHONY : libft/ft_itoa.c.o
+
+libft/ft_itoa.i: libft/ft_itoa.c.i
+
+.PHONY : libft/ft_itoa.i
+
+# target to preprocess a source file
+libft/ft_itoa.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_itoa.c.i
+.PHONY : libft/ft_itoa.c.i
+
+libft/ft_itoa.s: libft/ft_itoa.c.s
+
+.PHONY : libft/ft_itoa.s
+
+# target to generate assembly for a file
+libft/ft_itoa.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_itoa.c.s
+.PHONY : libft/ft_itoa.c.s
+
+libft/ft_max.o: libft/ft_max.c.o
+
+.PHONY : libft/ft_max.o
+
+# target to build an object file
+libft/ft_max.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_max.c.o
+.PHONY : libft/ft_max.c.o
+
+libft/ft_max.i: libft/ft_max.c.i
+
+.PHONY : libft/ft_max.i
+
+# target to preprocess a source file
+libft/ft_max.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_max.c.i
+.PHONY : libft/ft_max.c.i
+
+libft/ft_max.s: libft/ft_max.c.s
+
+.PHONY : libft/ft_max.s
+
+# target to generate assembly for a file
+libft/ft_max.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_max.c.s
+.PHONY : libft/ft_max.c.s
 
 libft/ft_memalloc.o: libft/ft_memalloc.c.o
 
@@ -960,32 +1014,32 @@ libft/ft_strstr.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_strstr.c.s
 .PHONY : libft/ft_strstr.c.s
 
-libft/ft_strsub..o: libft/ft_strsub..c.o
+libft/ft_strsub.o: libft/ft_strsub.c.o
 
-.PHONY : libft/ft_strsub..o
+.PHONY : libft/ft_strsub.o
 
 # target to build an object file
-libft/ft_strsub..c.o:
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_strsub..c.o
-.PHONY : libft/ft_strsub..c.o
+libft/ft_strsub.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_strsub.c.o
+.PHONY : libft/ft_strsub.c.o
 
-libft/ft_strsub..i: libft/ft_strsub..c.i
+libft/ft_strsub.i: libft/ft_strsub.c.i
 
-.PHONY : libft/ft_strsub..i
+.PHONY : libft/ft_strsub.i
 
 # target to preprocess a source file
-libft/ft_strsub..c.i:
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_strsub..c.i
-.PHONY : libft/ft_strsub..c.i
+libft/ft_strsub.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_strsub.c.i
+.PHONY : libft/ft_strsub.c.i
 
-libft/ft_strsub..s: libft/ft_strsub..c.s
+libft/ft_strsub.s: libft/ft_strsub.c.s
 
-.PHONY : libft/ft_strsub..s
+.PHONY : libft/ft_strsub.s
 
 # target to generate assembly for a file
-libft/ft_strsub..c.s:
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_strsub..c.s
-.PHONY : libft/ft_strsub..c.s
+libft/ft_strsub.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/libft/ft_strsub.c.s
+.PHONY : libft/ft_strsub.c.s
 
 libft/ft_strtok.o: libft/ft_strtok.c.o
 
@@ -1257,6 +1311,87 @@ sup/support.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sup/support.c.s
 .PHONY : sup/support.c.s
 
+term/delete.o: term/delete.c.o
+
+.PHONY : term/delete.o
+
+# target to build an object file
+term/delete.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/delete.c.o
+.PHONY : term/delete.c.o
+
+term/delete.i: term/delete.c.i
+
+.PHONY : term/delete.i
+
+# target to preprocess a source file
+term/delete.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/delete.c.i
+.PHONY : term/delete.c.i
+
+term/delete.s: term/delete.c.s
+
+.PHONY : term/delete.s
+
+# target to generate assembly for a file
+term/delete.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/delete.c.s
+.PHONY : term/delete.c.s
+
+term/key_move.o: term/key_move.c.o
+
+.PHONY : term/key_move.o
+
+# target to build an object file
+term/key_move.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/key_move.c.o
+.PHONY : term/key_move.c.o
+
+term/key_move.i: term/key_move.c.i
+
+.PHONY : term/key_move.i
+
+# target to preprocess a source file
+term/key_move.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/key_move.c.i
+.PHONY : term/key_move.c.i
+
+term/key_move.s: term/key_move.c.s
+
+.PHONY : term/key_move.s
+
+# target to generate assembly for a file
+term/key_move.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/key_move.c.s
+.PHONY : term/key_move.c.s
+
+term/term_init.o: term/term_init.c.o
+
+.PHONY : term/term_init.o
+
+# target to build an object file
+term/term_init.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/term_init.c.o
+.PHONY : term/term_init.c.o
+
+term/term_init.i: term/term_init.c.i
+
+.PHONY : term/term_init.i
+
+# target to preprocess a source file
+term/term_init.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/term_init.c.i
+.PHONY : term/term_init.c.i
+
+term/term_init.s: term/term_init.c.s
+
+.PHONY : term/term_init.s
+
+# target to generate assembly for a file
+term/term_init.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/term_init.c.s
+.PHONY : term/term_init.c.s
+
 tty/set_attr.o: tty/set_attr.c.o
 
 .PHONY : tty/set_attr.o
@@ -1291,8 +1426,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... 21sh"
 	@echo "... edit_cache"
+	@echo "... 21sh"
 	@echo "... builtins/chdir.o"
 	@echo "... builtins/chdir.i"
 	@echo "... builtins/chdir.s"
@@ -1332,6 +1467,12 @@ help:
 	@echo "... libft/ft_isprint.o"
 	@echo "... libft/ft_isprint.i"
 	@echo "... libft/ft_isprint.s"
+	@echo "... libft/ft_itoa.o"
+	@echo "... libft/ft_itoa.i"
+	@echo "... libft/ft_itoa.s"
+	@echo "... libft/ft_max.o"
+	@echo "... libft/ft_max.i"
+	@echo "... libft/ft_max.s"
 	@echo "... libft/ft_memalloc.o"
 	@echo "... libft/ft_memalloc.i"
 	@echo "... libft/ft_memalloc.s"
@@ -1386,9 +1527,9 @@ help:
 	@echo "... libft/ft_strstr.o"
 	@echo "... libft/ft_strstr.i"
 	@echo "... libft/ft_strstr.s"
-	@echo "... libft/ft_strsub..o"
-	@echo "... libft/ft_strsub..i"
-	@echo "... libft/ft_strsub..s"
+	@echo "... libft/ft_strsub.o"
+	@echo "... libft/ft_strsub.i"
+	@echo "... libft/ft_strsub.s"
 	@echo "... libft/ft_strtok.o"
 	@echo "... libft/ft_strtok.i"
 	@echo "... libft/ft_strtok.s"
@@ -1419,6 +1560,15 @@ help:
 	@echo "... sup/support.o"
 	@echo "... sup/support.i"
 	@echo "... sup/support.s"
+	@echo "... term/delete.o"
+	@echo "... term/delete.i"
+	@echo "... term/delete.s"
+	@echo "... term/key_move.o"
+	@echo "... term/key_move.i"
+	@echo "... term/key_move.s"
+	@echo "... term/term_init.o"
+	@echo "... term/term_init.i"
+	@echo "... term/term_init.s"
 	@echo "... tty/set_attr.o"
 	@echo "... tty/set_attr.i"
 	@echo "... tty/set_attr.s"

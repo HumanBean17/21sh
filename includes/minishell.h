@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:13 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/14 13:21:11 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/17 13:37:07 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 # include <signal.h>
 # include "error.h"
 # include <termios.h>
-# include <wait.h>
+# include <sys/wait.h>
 # include <curses.h>
 # include <term.h>
 
@@ -73,6 +73,11 @@ typedef struct	s_envfl
 }				t_envfl;
 
 /* edit line funcs */
+char 	*char_str(char c);
+void	delete(void);
+void	key_mv(void);
+int		ft_printnbr(int nbr);
+void	term_init(void);
 void    k_move();
 void    new_line();
 void    insert_ch(char buf);

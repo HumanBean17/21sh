@@ -23,9 +23,12 @@ add_executable(21sh
         libft/ft_bzero.c
         libft/ft_count_str.c
         libft/ft_isprint.c
+        libft/ft_itoa.c
+        libft/ft_max.c
         libft/ft_memalloc.c
         libft/ft_memchr.c
         libft/ft_memcpy.c
+        libft/ft_memset.c
         libft/ft_putchar_fd.c
         libft/ft_putstr_fd.c
         libft/ft_strcat.c
@@ -34,10 +37,13 @@ add_executable(21sh
         libft/ft_strcmp.c
         libft/ft_strdel.c
         libft/ft_strdup.c
+        libft/ft_strjoin.c
         libft/ft_strlen.c
         libft/ft_strncmp.c
+        libft/ft_strnew.c
         libft/ft_strsplit.c
         libft/ft_strstr.c
+        libft/ft_strsub.c
         libft/ft_strtok.c
         libft/ft_strwdup.c
         libft/ft_strwlen.c
@@ -49,4 +55,4 @@ add_executable(21sh
         realloc/realloc.c
         signal/signal.c
         sup/support.c
-        tty/set_attr.c libft/ft_strjoin.c libft/ft_strnew.c libft/ft_memset.c libft/ft_strsub..c libft/ft_max.c libft/ft_itoa.c)
+        tty/set_attr.c term/term_init.c term/key_move.c term/delete.c)

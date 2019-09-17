@@ -5,7 +5,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
     int		i;
     char	*new_s;
 
-    if (s)
+    if (s || len > 0)
     {
         i = 0;
         new_s = NULL;

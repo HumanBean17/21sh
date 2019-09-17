@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/humanbean/Desktop/clion-2019.2.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Users/lcrawn/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /home/humanbean/Desktop/clion-2019.2.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Users/lcrawn/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/humanbean/Desktop/42/21sh
+CMAKE_SOURCE_DIR = /Users/lcrawn/21sh
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/humanbean/Desktop/42/21sh/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lcrawn/21sh/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/21sh.dir/depend.make
@@ -59,562 +59,627 @@ include CMakeFiles/21sh.dir/flags.make
 
 CMakeFiles/21sh.dir/builtins/chdir.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/builtins/chdir.c.o: ../builtins/chdir.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/21sh.dir/builtins/chdir.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/chdir.c.o   -c /home/humanbean/Desktop/42/21sh/builtins/chdir.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/21sh.dir/builtins/chdir.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/chdir.c.o   -c /Users/lcrawn/21sh/builtins/chdir.c
 
 CMakeFiles/21sh.dir/builtins/chdir.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/builtins/chdir.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/builtins/chdir.c > CMakeFiles/21sh.dir/builtins/chdir.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/builtins/chdir.c > CMakeFiles/21sh.dir/builtins/chdir.c.i
 
 CMakeFiles/21sh.dir/builtins/chdir.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/builtins/chdir.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/builtins/chdir.c -o CMakeFiles/21sh.dir/builtins/chdir.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/builtins/chdir.c -o CMakeFiles/21sh.dir/builtins/chdir.c.s
 
 CMakeFiles/21sh.dir/builtins/echo.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/builtins/echo.c.o: ../builtins/echo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/21sh.dir/builtins/echo.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/echo.c.o   -c /home/humanbean/Desktop/42/21sh/builtins/echo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/21sh.dir/builtins/echo.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/echo.c.o   -c /Users/lcrawn/21sh/builtins/echo.c
 
 CMakeFiles/21sh.dir/builtins/echo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/builtins/echo.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/builtins/echo.c > CMakeFiles/21sh.dir/builtins/echo.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/builtins/echo.c > CMakeFiles/21sh.dir/builtins/echo.c.i
 
 CMakeFiles/21sh.dir/builtins/echo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/builtins/echo.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/builtins/echo.c -o CMakeFiles/21sh.dir/builtins/echo.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/builtins/echo.c -o CMakeFiles/21sh.dir/builtins/echo.c.s
 
 CMakeFiles/21sh.dir/builtins/env.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/builtins/env.c.o: ../builtins/env.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/21sh.dir/builtins/env.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/env.c.o   -c /home/humanbean/Desktop/42/21sh/builtins/env.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/21sh.dir/builtins/env.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/env.c.o   -c /Users/lcrawn/21sh/builtins/env.c
 
 CMakeFiles/21sh.dir/builtins/env.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/builtins/env.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/builtins/env.c > CMakeFiles/21sh.dir/builtins/env.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/builtins/env.c > CMakeFiles/21sh.dir/builtins/env.c.i
 
 CMakeFiles/21sh.dir/builtins/env.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/builtins/env.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/builtins/env.c -o CMakeFiles/21sh.dir/builtins/env.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/builtins/env.c -o CMakeFiles/21sh.dir/builtins/env.c.s
 
 CMakeFiles/21sh.dir/builtins/env2.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/builtins/env2.c.o: ../builtins/env2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/21sh.dir/builtins/env2.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/env2.c.o   -c /home/humanbean/Desktop/42/21sh/builtins/env2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/21sh.dir/builtins/env2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/env2.c.o   -c /Users/lcrawn/21sh/builtins/env2.c
 
 CMakeFiles/21sh.dir/builtins/env2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/builtins/env2.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/builtins/env2.c > CMakeFiles/21sh.dir/builtins/env2.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/builtins/env2.c > CMakeFiles/21sh.dir/builtins/env2.c.i
 
 CMakeFiles/21sh.dir/builtins/env2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/builtins/env2.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/builtins/env2.c -o CMakeFiles/21sh.dir/builtins/env2.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/builtins/env2.c -o CMakeFiles/21sh.dir/builtins/env2.c.s
 
 CMakeFiles/21sh.dir/builtins/pwd.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/builtins/pwd.c.o: ../builtins/pwd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/21sh.dir/builtins/pwd.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/pwd.c.o   -c /home/humanbean/Desktop/42/21sh/builtins/pwd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/21sh.dir/builtins/pwd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/pwd.c.o   -c /Users/lcrawn/21sh/builtins/pwd.c
 
 CMakeFiles/21sh.dir/builtins/pwd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/builtins/pwd.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/builtins/pwd.c > CMakeFiles/21sh.dir/builtins/pwd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/builtins/pwd.c > CMakeFiles/21sh.dir/builtins/pwd.c.i
 
 CMakeFiles/21sh.dir/builtins/pwd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/builtins/pwd.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/builtins/pwd.c -o CMakeFiles/21sh.dir/builtins/pwd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/builtins/pwd.c -o CMakeFiles/21sh.dir/builtins/pwd.c.s
 
 CMakeFiles/21sh.dir/builtins/pwd_update.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/builtins/pwd_update.c.o: ../builtins/pwd_update.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/21sh.dir/builtins/pwd_update.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/pwd_update.c.o   -c /home/humanbean/Desktop/42/21sh/builtins/pwd_update.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/21sh.dir/builtins/pwd_update.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/pwd_update.c.o   -c /Users/lcrawn/21sh/builtins/pwd_update.c
 
 CMakeFiles/21sh.dir/builtins/pwd_update.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/builtins/pwd_update.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/builtins/pwd_update.c > CMakeFiles/21sh.dir/builtins/pwd_update.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/builtins/pwd_update.c > CMakeFiles/21sh.dir/builtins/pwd_update.c.i
 
 CMakeFiles/21sh.dir/builtins/pwd_update.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/builtins/pwd_update.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/builtins/pwd_update.c -o CMakeFiles/21sh.dir/builtins/pwd_update.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/builtins/pwd_update.c -o CMakeFiles/21sh.dir/builtins/pwd_update.c.s
 
 CMakeFiles/21sh.dir/builtins/setenv.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/builtins/setenv.c.o: ../builtins/setenv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/21sh.dir/builtins/setenv.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/setenv.c.o   -c /home/humanbean/Desktop/42/21sh/builtins/setenv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/21sh.dir/builtins/setenv.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/setenv.c.o   -c /Users/lcrawn/21sh/builtins/setenv.c
 
 CMakeFiles/21sh.dir/builtins/setenv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/builtins/setenv.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/builtins/setenv.c > CMakeFiles/21sh.dir/builtins/setenv.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/builtins/setenv.c > CMakeFiles/21sh.dir/builtins/setenv.c.i
 
 CMakeFiles/21sh.dir/builtins/setenv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/builtins/setenv.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/builtins/setenv.c -o CMakeFiles/21sh.dir/builtins/setenv.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/builtins/setenv.c -o CMakeFiles/21sh.dir/builtins/setenv.c.s
 
 CMakeFiles/21sh.dir/builtins/unsetenv.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/builtins/unsetenv.c.o: ../builtins/unsetenv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/21sh.dir/builtins/unsetenv.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/unsetenv.c.o   -c /home/humanbean/Desktop/42/21sh/builtins/unsetenv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/21sh.dir/builtins/unsetenv.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/builtins/unsetenv.c.o   -c /Users/lcrawn/21sh/builtins/unsetenv.c
 
 CMakeFiles/21sh.dir/builtins/unsetenv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/builtins/unsetenv.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/builtins/unsetenv.c > CMakeFiles/21sh.dir/builtins/unsetenv.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/builtins/unsetenv.c > CMakeFiles/21sh.dir/builtins/unsetenv.c.i
 
 CMakeFiles/21sh.dir/builtins/unsetenv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/builtins/unsetenv.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/builtins/unsetenv.c -o CMakeFiles/21sh.dir/builtins/unsetenv.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/builtins/unsetenv.c -o CMakeFiles/21sh.dir/builtins/unsetenv.c.s
 
 CMakeFiles/21sh.dir/error/perror.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/error/perror.c.o: ../error/perror.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/21sh.dir/error/perror.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/error/perror.c.o   -c /home/humanbean/Desktop/42/21sh/error/perror.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/21sh.dir/error/perror.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/error/perror.c.o   -c /Users/lcrawn/21sh/error/perror.c
 
 CMakeFiles/21sh.dir/error/perror.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/error/perror.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/error/perror.c > CMakeFiles/21sh.dir/error/perror.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/error/perror.c > CMakeFiles/21sh.dir/error/perror.c.i
 
 CMakeFiles/21sh.dir/error/perror.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/error/perror.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/error/perror.c -o CMakeFiles/21sh.dir/error/perror.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/error/perror.c -o CMakeFiles/21sh.dir/error/perror.c.s
 
 CMakeFiles/21sh.dir/execute/execute.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/execute/execute.c.o: ../execute/execute.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/21sh.dir/execute/execute.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/execute/execute.c.o   -c /home/humanbean/Desktop/42/21sh/execute/execute.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/21sh.dir/execute/execute.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/execute/execute.c.o   -c /Users/lcrawn/21sh/execute/execute.c
 
 CMakeFiles/21sh.dir/execute/execute.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/execute/execute.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/execute/execute.c > CMakeFiles/21sh.dir/execute/execute.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/execute/execute.c > CMakeFiles/21sh.dir/execute/execute.c.i
 
 CMakeFiles/21sh.dir/execute/execute.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/execute/execute.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/execute/execute.c -o CMakeFiles/21sh.dir/execute/execute.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/execute/execute.c -o CMakeFiles/21sh.dir/execute/execute.c.s
 
 CMakeFiles/21sh.dir/libft/ft_bzero.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/libft/ft_bzero.c.o: ../libft/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/21sh.dir/libft/ft_bzero.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_bzero.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_bzero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/21sh.dir/libft/ft_bzero.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_bzero.c.o   -c /Users/lcrawn/21sh/libft/ft_bzero.c
 
 CMakeFiles/21sh.dir/libft/ft_bzero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_bzero.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_bzero.c > CMakeFiles/21sh.dir/libft/ft_bzero.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_bzero.c > CMakeFiles/21sh.dir/libft/ft_bzero.c.i
 
 CMakeFiles/21sh.dir/libft/ft_bzero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_bzero.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_bzero.c -o CMakeFiles/21sh.dir/libft/ft_bzero.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_bzero.c -o CMakeFiles/21sh.dir/libft/ft_bzero.c.s
 
 CMakeFiles/21sh.dir/libft/ft_count_str.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/libft/ft_count_str.c.o: ../libft/ft_count_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/21sh.dir/libft/ft_count_str.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_count_str.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_count_str.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/21sh.dir/libft/ft_count_str.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_count_str.c.o   -c /Users/lcrawn/21sh/libft/ft_count_str.c
 
 CMakeFiles/21sh.dir/libft/ft_count_str.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_count_str.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_count_str.c > CMakeFiles/21sh.dir/libft/ft_count_str.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_count_str.c > CMakeFiles/21sh.dir/libft/ft_count_str.c.i
 
 CMakeFiles/21sh.dir/libft/ft_count_str.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_count_str.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_count_str.c -o CMakeFiles/21sh.dir/libft/ft_count_str.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_count_str.c -o CMakeFiles/21sh.dir/libft/ft_count_str.c.s
 
 CMakeFiles/21sh.dir/libft/ft_isprint.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/libft/ft_isprint.c.o: ../libft/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/21sh.dir/libft/ft_isprint.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_isprint.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_isprint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/21sh.dir/libft/ft_isprint.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_isprint.c.o   -c /Users/lcrawn/21sh/libft/ft_isprint.c
 
 CMakeFiles/21sh.dir/libft/ft_isprint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_isprint.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_isprint.c > CMakeFiles/21sh.dir/libft/ft_isprint.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_isprint.c > CMakeFiles/21sh.dir/libft/ft_isprint.c.i
 
 CMakeFiles/21sh.dir/libft/ft_isprint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_isprint.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_isprint.c -o CMakeFiles/21sh.dir/libft/ft_isprint.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_isprint.c -o CMakeFiles/21sh.dir/libft/ft_isprint.c.s
+
+CMakeFiles/21sh.dir/libft/ft_itoa.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/21sh.dir/libft/ft_itoa.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_itoa.c.o   -c /Users/lcrawn/21sh/libft/ft_itoa.c
+
+CMakeFiles/21sh.dir/libft/ft_itoa.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_itoa.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_itoa.c > CMakeFiles/21sh.dir/libft/ft_itoa.c.i
+
+CMakeFiles/21sh.dir/libft/ft_itoa.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_itoa.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_itoa.c -o CMakeFiles/21sh.dir/libft/ft_itoa.c.s
+
+CMakeFiles/21sh.dir/libft/ft_max.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_max.c.o: ../libft/ft_max.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/21sh.dir/libft/ft_max.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_max.c.o   -c /Users/lcrawn/21sh/libft/ft_max.c
+
+CMakeFiles/21sh.dir/libft/ft_max.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_max.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_max.c > CMakeFiles/21sh.dir/libft/ft_max.c.i
+
+CMakeFiles/21sh.dir/libft/ft_max.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_max.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_max.c -o CMakeFiles/21sh.dir/libft/ft_max.c.s
 
 CMakeFiles/21sh.dir/libft/ft_memalloc.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/libft/ft_memalloc.c.o: ../libft/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/21sh.dir/libft/ft_memalloc.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_memalloc.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_memalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/21sh.dir/libft/ft_memalloc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_memalloc.c.o   -c /Users/lcrawn/21sh/libft/ft_memalloc.c
 
 CMakeFiles/21sh.dir/libft/ft_memalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_memalloc.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_memalloc.c > CMakeFiles/21sh.dir/libft/ft_memalloc.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_memalloc.c > CMakeFiles/21sh.dir/libft/ft_memalloc.c.i
 
 CMakeFiles/21sh.dir/libft/ft_memalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_memalloc.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_memalloc.c -o CMakeFiles/21sh.dir/libft/ft_memalloc.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_memalloc.c -o CMakeFiles/21sh.dir/libft/ft_memalloc.c.s
 
 CMakeFiles/21sh.dir/libft/ft_memchr.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/libft/ft_memchr.c.o: ../libft/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/21sh.dir/libft/ft_memchr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_memchr.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_memchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/21sh.dir/libft/ft_memchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_memchr.c.o   -c /Users/lcrawn/21sh/libft/ft_memchr.c
 
 CMakeFiles/21sh.dir/libft/ft_memchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_memchr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_memchr.c > CMakeFiles/21sh.dir/libft/ft_memchr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_memchr.c > CMakeFiles/21sh.dir/libft/ft_memchr.c.i
 
 CMakeFiles/21sh.dir/libft/ft_memchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_memchr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_memchr.c -o CMakeFiles/21sh.dir/libft/ft_memchr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_memchr.c -o CMakeFiles/21sh.dir/libft/ft_memchr.c.s
 
 CMakeFiles/21sh.dir/libft/ft_memcpy.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/libft/ft_memcpy.c.o: ../libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/21sh.dir/libft/ft_memcpy.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_memcpy.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_memcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/21sh.dir/libft/ft_memcpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_memcpy.c.o   -c /Users/lcrawn/21sh/libft/ft_memcpy.c
 
 CMakeFiles/21sh.dir/libft/ft_memcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_memcpy.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_memcpy.c > CMakeFiles/21sh.dir/libft/ft_memcpy.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_memcpy.c > CMakeFiles/21sh.dir/libft/ft_memcpy.c.i
 
 CMakeFiles/21sh.dir/libft/ft_memcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_memcpy.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_memcpy.c -o CMakeFiles/21sh.dir/libft/ft_memcpy.c.s
-
-CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.o: ../libft/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_putchar_fd.c
-
-CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_putchar_fd.c > CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.i
-
-CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_putchar_fd.c -o CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.s
-
-CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_putstr_fd.c
-
-CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_putstr_fd.c > CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.i
-
-CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_putstr_fd.c -o CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strcat.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strcat.c.o: ../libft/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/21sh.dir/libft/ft_strcat.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strcat.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strcat.c
-
-CMakeFiles/21sh.dir/libft/ft_strcat.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strcat.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strcat.c > CMakeFiles/21sh.dir/libft/ft_strcat.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strcat.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strcat.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strcat.c -o CMakeFiles/21sh.dir/libft/ft_strcat.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strchr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/21sh.dir/libft/ft_strchr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strchr.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strchr.c
-
-CMakeFiles/21sh.dir/libft/ft_strchr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strchr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strchr.c > CMakeFiles/21sh.dir/libft/ft_strchr.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strchr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strchr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strchr.c -o CMakeFiles/21sh.dir/libft/ft_strchr.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strclen.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strclen.c.o: ../libft/ft_strclen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/21sh.dir/libft/ft_strclen.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strclen.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strclen.c
-
-CMakeFiles/21sh.dir/libft/ft_strclen.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strclen.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strclen.c > CMakeFiles/21sh.dir/libft/ft_strclen.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strclen.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strclen.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strclen.c -o CMakeFiles/21sh.dir/libft/ft_strclen.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strcmp.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strcmp.c.o: ../libft/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/21sh.dir/libft/ft_strcmp.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strcmp.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strcmp.c
-
-CMakeFiles/21sh.dir/libft/ft_strcmp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strcmp.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strcmp.c > CMakeFiles/21sh.dir/libft/ft_strcmp.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strcmp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strcmp.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strcmp.c -o CMakeFiles/21sh.dir/libft/ft_strcmp.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strdel.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strdel.c.o: ../libft/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/21sh.dir/libft/ft_strdel.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strdel.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strdel.c
-
-CMakeFiles/21sh.dir/libft/ft_strdel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strdel.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strdel.c > CMakeFiles/21sh.dir/libft/ft_strdel.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strdel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strdel.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strdel.c -o CMakeFiles/21sh.dir/libft/ft_strdel.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strdup.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strdup.c.o: ../libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/21sh.dir/libft/ft_strdup.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strdup.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strdup.c
-
-CMakeFiles/21sh.dir/libft/ft_strdup.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strdup.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strdup.c > CMakeFiles/21sh.dir/libft/ft_strdup.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strdup.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strdup.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strdup.c -o CMakeFiles/21sh.dir/libft/ft_strdup.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strlen.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/21sh.dir/libft/ft_strlen.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strlen.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strlen.c
-
-CMakeFiles/21sh.dir/libft/ft_strlen.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strlen.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strlen.c > CMakeFiles/21sh.dir/libft/ft_strlen.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strlen.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strlen.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strlen.c -o CMakeFiles/21sh.dir/libft/ft_strlen.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strncmp.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strncmp.c.o: ../libft/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/21sh.dir/libft/ft_strncmp.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strncmp.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strncmp.c
-
-CMakeFiles/21sh.dir/libft/ft_strncmp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strncmp.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strncmp.c > CMakeFiles/21sh.dir/libft/ft_strncmp.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strncmp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strncmp.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strncmp.c -o CMakeFiles/21sh.dir/libft/ft_strncmp.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strsplit.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strsplit.c.o: ../libft/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/21sh.dir/libft/ft_strsplit.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strsplit.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strsplit.c
-
-CMakeFiles/21sh.dir/libft/ft_strsplit.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strsplit.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strsplit.c > CMakeFiles/21sh.dir/libft/ft_strsplit.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strsplit.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strsplit.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strsplit.c -o CMakeFiles/21sh.dir/libft/ft_strsplit.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strstr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strstr.c.o: ../libft/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/21sh.dir/libft/ft_strstr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strstr.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strstr.c
-
-CMakeFiles/21sh.dir/libft/ft_strstr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strstr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strstr.c > CMakeFiles/21sh.dir/libft/ft_strstr.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strstr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strstr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strstr.c -o CMakeFiles/21sh.dir/libft/ft_strstr.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strtok.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strtok.c.o: ../libft/ft_strtok.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/21sh.dir/libft/ft_strtok.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strtok.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strtok.c
-
-CMakeFiles/21sh.dir/libft/ft_strtok.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strtok.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strtok.c > CMakeFiles/21sh.dir/libft/ft_strtok.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strtok.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strtok.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strtok.c -o CMakeFiles/21sh.dir/libft/ft_strtok.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strwdup.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strwdup.c.o: ../libft/ft_strwdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/21sh.dir/libft/ft_strwdup.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strwdup.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strwdup.c
-
-CMakeFiles/21sh.dir/libft/ft_strwdup.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strwdup.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strwdup.c > CMakeFiles/21sh.dir/libft/ft_strwdup.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strwdup.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strwdup.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strwdup.c -o CMakeFiles/21sh.dir/libft/ft_strwdup.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strwlen.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strwlen.c.o: ../libft/ft_strwlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/21sh.dir/libft/ft_strwlen.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strwlen.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strwlen.c
-
-CMakeFiles/21sh.dir/libft/ft_strwlen.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strwlen.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strwlen.c > CMakeFiles/21sh.dir/libft/ft_strwlen.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strwlen.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strwlen.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strwlen.c -o CMakeFiles/21sh.dir/libft/ft_strwlen.c.s
-
-CMakeFiles/21sh.dir/line_edit/draw.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/line_edit/draw.c.o: ../line_edit/draw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/21sh.dir/line_edit/draw.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/line_edit/draw.c.o   -c /home/humanbean/Desktop/42/21sh/line_edit/draw.c
-
-CMakeFiles/21sh.dir/line_edit/draw.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/line_edit/draw.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/line_edit/draw.c > CMakeFiles/21sh.dir/line_edit/draw.c.i
-
-CMakeFiles/21sh.dir/line_edit/draw.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/line_edit/draw.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/line_edit/draw.c -o CMakeFiles/21sh.dir/line_edit/draw.c.s
-
-CMakeFiles/21sh.dir/line_edit/edit.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/line_edit/edit.c.o: ../line_edit/edit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/21sh.dir/line_edit/edit.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/line_edit/edit.c.o   -c /home/humanbean/Desktop/42/21sh/line_edit/edit.c
-
-CMakeFiles/21sh.dir/line_edit/edit.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/line_edit/edit.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/line_edit/edit.c > CMakeFiles/21sh.dir/line_edit/edit.c.i
-
-CMakeFiles/21sh.dir/line_edit/edit.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/line_edit/edit.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/line_edit/edit.c -o CMakeFiles/21sh.dir/line_edit/edit.c.s
-
-CMakeFiles/21sh.dir/parse/main.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/parse/main.c.o: ../parse/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/21sh.dir/parse/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/parse/main.c.o   -c /home/humanbean/Desktop/42/21sh/parse/main.c
-
-CMakeFiles/21sh.dir/parse/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/parse/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/parse/main.c > CMakeFiles/21sh.dir/parse/main.c.i
-
-CMakeFiles/21sh.dir/parse/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/parse/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/parse/main.c -o CMakeFiles/21sh.dir/parse/main.c.s
-
-CMakeFiles/21sh.dir/parse/parse.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/parse/parse.c.o: ../parse/parse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/21sh.dir/parse/parse.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/parse/parse.c.o   -c /home/humanbean/Desktop/42/21sh/parse/parse.c
-
-CMakeFiles/21sh.dir/parse/parse.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/parse/parse.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/parse/parse.c > CMakeFiles/21sh.dir/parse/parse.c.i
-
-CMakeFiles/21sh.dir/parse/parse.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/parse/parse.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/parse/parse.c -o CMakeFiles/21sh.dir/parse/parse.c.s
-
-CMakeFiles/21sh.dir/realloc/realloc.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/realloc/realloc.c.o: ../realloc/realloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/21sh.dir/realloc/realloc.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/realloc/realloc.c.o   -c /home/humanbean/Desktop/42/21sh/realloc/realloc.c
-
-CMakeFiles/21sh.dir/realloc/realloc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/realloc/realloc.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/realloc/realloc.c > CMakeFiles/21sh.dir/realloc/realloc.c.i
-
-CMakeFiles/21sh.dir/realloc/realloc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/realloc/realloc.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/realloc/realloc.c -o CMakeFiles/21sh.dir/realloc/realloc.c.s
-
-CMakeFiles/21sh.dir/signal/signal.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/signal/signal.c.o: ../signal/signal.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/21sh.dir/signal/signal.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/signal/signal.c.o   -c /home/humanbean/Desktop/42/21sh/signal/signal.c
-
-CMakeFiles/21sh.dir/signal/signal.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/signal/signal.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/signal/signal.c > CMakeFiles/21sh.dir/signal/signal.c.i
-
-CMakeFiles/21sh.dir/signal/signal.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/signal/signal.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/signal/signal.c -o CMakeFiles/21sh.dir/signal/signal.c.s
-
-CMakeFiles/21sh.dir/sup/support.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/sup/support.c.o: ../sup/support.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/21sh.dir/sup/support.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sup/support.c.o   -c /home/humanbean/Desktop/42/21sh/sup/support.c
-
-CMakeFiles/21sh.dir/sup/support.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sup/support.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/sup/support.c > CMakeFiles/21sh.dir/sup/support.c.i
-
-CMakeFiles/21sh.dir/sup/support.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sup/support.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/sup/support.c -o CMakeFiles/21sh.dir/sup/support.c.s
-
-CMakeFiles/21sh.dir/tty/set_attr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/tty/set_attr.c.o: ../tty/set_attr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/21sh.dir/tty/set_attr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/tty/set_attr.c.o   -c /home/humanbean/Desktop/42/21sh/tty/set_attr.c
-
-CMakeFiles/21sh.dir/tty/set_attr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/tty/set_attr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/tty/set_attr.c > CMakeFiles/21sh.dir/tty/set_attr.c.i
-
-CMakeFiles/21sh.dir/tty/set_attr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/tty/set_attr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/tty/set_attr.c -o CMakeFiles/21sh.dir/tty/set_attr.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strjoin.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strjoin.c.o: ../libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/21sh.dir/libft/ft_strjoin.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strjoin.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strjoin.c
-
-CMakeFiles/21sh.dir/libft/ft_strjoin.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strjoin.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strjoin.c > CMakeFiles/21sh.dir/libft/ft_strjoin.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strjoin.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strjoin.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strjoin.c -o CMakeFiles/21sh.dir/libft/ft_strjoin.c.s
-
-CMakeFiles/21sh.dir/libft/ft_strnew.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strnew.c.o: ../libft/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/21sh.dir/libft/ft_strnew.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strnew.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strnew.c
-
-CMakeFiles/21sh.dir/libft/ft_strnew.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strnew.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strnew.c > CMakeFiles/21sh.dir/libft/ft_strnew.c.i
-
-CMakeFiles/21sh.dir/libft/ft_strnew.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strnew.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strnew.c -o CMakeFiles/21sh.dir/libft/ft_strnew.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_memcpy.c -o CMakeFiles/21sh.dir/libft/ft_memcpy.c.s
 
 CMakeFiles/21sh.dir/libft/ft_memset.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/libft/ft_memset.c.o: ../libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/21sh.dir/libft/ft_memset.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_memset.c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_memset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/21sh.dir/libft/ft_memset.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_memset.c.o   -c /Users/lcrawn/21sh/libft/ft_memset.c
 
 CMakeFiles/21sh.dir/libft/ft_memset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_memset.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_memset.c > CMakeFiles/21sh.dir/libft/ft_memset.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_memset.c > CMakeFiles/21sh.dir/libft/ft_memset.c.i
 
 CMakeFiles/21sh.dir/libft/ft_memset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_memset.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_memset.c -o CMakeFiles/21sh.dir/libft/ft_memset.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_memset.c -o CMakeFiles/21sh.dir/libft/ft_memset.c.s
 
-CMakeFiles/21sh.dir/libft/ft_strsub..c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/libft/ft_strsub..c.o: ../libft/ft_strsub..c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/21sh.dir/libft/ft_strsub..c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strsub..c.o   -c /home/humanbean/Desktop/42/21sh/libft/ft_strsub..c
+CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.o: ../libft/ft_putchar_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.o   -c /Users/lcrawn/21sh/libft/ft_putchar_fd.c
 
-CMakeFiles/21sh.dir/libft/ft_strsub..c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strsub..c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/humanbean/Desktop/42/21sh/libft/ft_strsub..c > CMakeFiles/21sh.dir/libft/ft_strsub..c.i
+CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_putchar_fd.c > CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.i
 
-CMakeFiles/21sh.dir/libft/ft_strsub..c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strsub..c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/humanbean/Desktop/42/21sh/libft/ft_strsub..c -o CMakeFiles/21sh.dir/libft/ft_strsub..c.s
+CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_putchar_fd.c -o CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.s
+
+CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.o   -c /Users/lcrawn/21sh/libft/ft_putstr_fd.c
+
+CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_putstr_fd.c > CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.i
+
+CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_putstr_fd.c -o CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strcat.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strcat.c.o: ../libft/ft_strcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/21sh.dir/libft/ft_strcat.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strcat.c.o   -c /Users/lcrawn/21sh/libft/ft_strcat.c
+
+CMakeFiles/21sh.dir/libft/ft_strcat.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strcat.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strcat.c > CMakeFiles/21sh.dir/libft/ft_strcat.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strcat.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strcat.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strcat.c -o CMakeFiles/21sh.dir/libft/ft_strcat.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strchr.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/21sh.dir/libft/ft_strchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strchr.c.o   -c /Users/lcrawn/21sh/libft/ft_strchr.c
+
+CMakeFiles/21sh.dir/libft/ft_strchr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strchr.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strchr.c > CMakeFiles/21sh.dir/libft/ft_strchr.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strchr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strchr.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strchr.c -o CMakeFiles/21sh.dir/libft/ft_strchr.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strclen.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strclen.c.o: ../libft/ft_strclen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/21sh.dir/libft/ft_strclen.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strclen.c.o   -c /Users/lcrawn/21sh/libft/ft_strclen.c
+
+CMakeFiles/21sh.dir/libft/ft_strclen.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strclen.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strclen.c > CMakeFiles/21sh.dir/libft/ft_strclen.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strclen.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strclen.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strclen.c -o CMakeFiles/21sh.dir/libft/ft_strclen.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strcmp.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strcmp.c.o: ../libft/ft_strcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/21sh.dir/libft/ft_strcmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strcmp.c.o   -c /Users/lcrawn/21sh/libft/ft_strcmp.c
+
+CMakeFiles/21sh.dir/libft/ft_strcmp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strcmp.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strcmp.c > CMakeFiles/21sh.dir/libft/ft_strcmp.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strcmp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strcmp.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strcmp.c -o CMakeFiles/21sh.dir/libft/ft_strcmp.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strdel.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strdel.c.o: ../libft/ft_strdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/21sh.dir/libft/ft_strdel.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strdel.c.o   -c /Users/lcrawn/21sh/libft/ft_strdel.c
+
+CMakeFiles/21sh.dir/libft/ft_strdel.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strdel.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strdel.c > CMakeFiles/21sh.dir/libft/ft_strdel.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strdel.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strdel.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strdel.c -o CMakeFiles/21sh.dir/libft/ft_strdel.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strdup.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strdup.c.o: ../libft/ft_strdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/21sh.dir/libft/ft_strdup.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strdup.c.o   -c /Users/lcrawn/21sh/libft/ft_strdup.c
+
+CMakeFiles/21sh.dir/libft/ft_strdup.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strdup.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strdup.c > CMakeFiles/21sh.dir/libft/ft_strdup.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strdup.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strdup.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strdup.c -o CMakeFiles/21sh.dir/libft/ft_strdup.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strjoin.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strjoin.c.o: ../libft/ft_strjoin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/21sh.dir/libft/ft_strjoin.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strjoin.c.o   -c /Users/lcrawn/21sh/libft/ft_strjoin.c
+
+CMakeFiles/21sh.dir/libft/ft_strjoin.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strjoin.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strjoin.c > CMakeFiles/21sh.dir/libft/ft_strjoin.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strjoin.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strjoin.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strjoin.c -o CMakeFiles/21sh.dir/libft/ft_strjoin.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strlen.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/21sh.dir/libft/ft_strlen.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strlen.c.o   -c /Users/lcrawn/21sh/libft/ft_strlen.c
+
+CMakeFiles/21sh.dir/libft/ft_strlen.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strlen.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strlen.c > CMakeFiles/21sh.dir/libft/ft_strlen.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strlen.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strlen.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strlen.c -o CMakeFiles/21sh.dir/libft/ft_strlen.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strncmp.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strncmp.c.o: ../libft/ft_strncmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/21sh.dir/libft/ft_strncmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strncmp.c.o   -c /Users/lcrawn/21sh/libft/ft_strncmp.c
+
+CMakeFiles/21sh.dir/libft/ft_strncmp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strncmp.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strncmp.c > CMakeFiles/21sh.dir/libft/ft_strncmp.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strncmp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strncmp.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strncmp.c -o CMakeFiles/21sh.dir/libft/ft_strncmp.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strnew.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strnew.c.o: ../libft/ft_strnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/21sh.dir/libft/ft_strnew.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strnew.c.o   -c /Users/lcrawn/21sh/libft/ft_strnew.c
+
+CMakeFiles/21sh.dir/libft/ft_strnew.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strnew.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strnew.c > CMakeFiles/21sh.dir/libft/ft_strnew.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strnew.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strnew.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strnew.c -o CMakeFiles/21sh.dir/libft/ft_strnew.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strsplit.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strsplit.c.o: ../libft/ft_strsplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/21sh.dir/libft/ft_strsplit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strsplit.c.o   -c /Users/lcrawn/21sh/libft/ft_strsplit.c
+
+CMakeFiles/21sh.dir/libft/ft_strsplit.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strsplit.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strsplit.c > CMakeFiles/21sh.dir/libft/ft_strsplit.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strsplit.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strsplit.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strsplit.c -o CMakeFiles/21sh.dir/libft/ft_strsplit.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strstr.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strstr.c.o: ../libft/ft_strstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/21sh.dir/libft/ft_strstr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strstr.c.o   -c /Users/lcrawn/21sh/libft/ft_strstr.c
+
+CMakeFiles/21sh.dir/libft/ft_strstr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strstr.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strstr.c > CMakeFiles/21sh.dir/libft/ft_strstr.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strstr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strstr.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strstr.c -o CMakeFiles/21sh.dir/libft/ft_strstr.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strsub.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strsub.c.o: ../libft/ft_strsub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/21sh.dir/libft/ft_strsub.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strsub.c.o   -c /Users/lcrawn/21sh/libft/ft_strsub.c
+
+CMakeFiles/21sh.dir/libft/ft_strsub.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strsub.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strsub.c > CMakeFiles/21sh.dir/libft/ft_strsub.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strsub.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strsub.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strsub.c -o CMakeFiles/21sh.dir/libft/ft_strsub.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strtok.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strtok.c.o: ../libft/ft_strtok.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/21sh.dir/libft/ft_strtok.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strtok.c.o   -c /Users/lcrawn/21sh/libft/ft_strtok.c
+
+CMakeFiles/21sh.dir/libft/ft_strtok.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strtok.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strtok.c > CMakeFiles/21sh.dir/libft/ft_strtok.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strtok.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strtok.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strtok.c -o CMakeFiles/21sh.dir/libft/ft_strtok.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strwdup.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strwdup.c.o: ../libft/ft_strwdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/21sh.dir/libft/ft_strwdup.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strwdup.c.o   -c /Users/lcrawn/21sh/libft/ft_strwdup.c
+
+CMakeFiles/21sh.dir/libft/ft_strwdup.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strwdup.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strwdup.c > CMakeFiles/21sh.dir/libft/ft_strwdup.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strwdup.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strwdup.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strwdup.c -o CMakeFiles/21sh.dir/libft/ft_strwdup.c.s
+
+CMakeFiles/21sh.dir/libft/ft_strwlen.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/libft/ft_strwlen.c.o: ../libft/ft_strwlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/21sh.dir/libft/ft_strwlen.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/libft/ft_strwlen.c.o   -c /Users/lcrawn/21sh/libft/ft_strwlen.c
+
+CMakeFiles/21sh.dir/libft/ft_strwlen.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/libft/ft_strwlen.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/libft/ft_strwlen.c > CMakeFiles/21sh.dir/libft/ft_strwlen.c.i
+
+CMakeFiles/21sh.dir/libft/ft_strwlen.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/libft/ft_strwlen.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/libft/ft_strwlen.c -o CMakeFiles/21sh.dir/libft/ft_strwlen.c.s
+
+CMakeFiles/21sh.dir/line_edit/draw.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/line_edit/draw.c.o: ../line_edit/draw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/21sh.dir/line_edit/draw.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/line_edit/draw.c.o   -c /Users/lcrawn/21sh/line_edit/draw.c
+
+CMakeFiles/21sh.dir/line_edit/draw.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/line_edit/draw.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/line_edit/draw.c > CMakeFiles/21sh.dir/line_edit/draw.c.i
+
+CMakeFiles/21sh.dir/line_edit/draw.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/line_edit/draw.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/line_edit/draw.c -o CMakeFiles/21sh.dir/line_edit/draw.c.s
+
+CMakeFiles/21sh.dir/line_edit/edit.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/line_edit/edit.c.o: ../line_edit/edit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/21sh.dir/line_edit/edit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/line_edit/edit.c.o   -c /Users/lcrawn/21sh/line_edit/edit.c
+
+CMakeFiles/21sh.dir/line_edit/edit.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/line_edit/edit.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/line_edit/edit.c > CMakeFiles/21sh.dir/line_edit/edit.c.i
+
+CMakeFiles/21sh.dir/line_edit/edit.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/line_edit/edit.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/line_edit/edit.c -o CMakeFiles/21sh.dir/line_edit/edit.c.s
+
+CMakeFiles/21sh.dir/parse/main.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/parse/main.c.o: ../parse/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/21sh.dir/parse/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/parse/main.c.o   -c /Users/lcrawn/21sh/parse/main.c
+
+CMakeFiles/21sh.dir/parse/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/parse/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/parse/main.c > CMakeFiles/21sh.dir/parse/main.c.i
+
+CMakeFiles/21sh.dir/parse/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/parse/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/parse/main.c -o CMakeFiles/21sh.dir/parse/main.c.s
+
+CMakeFiles/21sh.dir/parse/parse.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/parse/parse.c.o: ../parse/parse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/21sh.dir/parse/parse.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/parse/parse.c.o   -c /Users/lcrawn/21sh/parse/parse.c
+
+CMakeFiles/21sh.dir/parse/parse.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/parse/parse.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/parse/parse.c > CMakeFiles/21sh.dir/parse/parse.c.i
+
+CMakeFiles/21sh.dir/parse/parse.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/parse/parse.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/parse/parse.c -o CMakeFiles/21sh.dir/parse/parse.c.s
+
+CMakeFiles/21sh.dir/realloc/realloc.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/realloc/realloc.c.o: ../realloc/realloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/21sh.dir/realloc/realloc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/realloc/realloc.c.o   -c /Users/lcrawn/21sh/realloc/realloc.c
+
+CMakeFiles/21sh.dir/realloc/realloc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/realloc/realloc.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/realloc/realloc.c > CMakeFiles/21sh.dir/realloc/realloc.c.i
+
+CMakeFiles/21sh.dir/realloc/realloc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/realloc/realloc.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/realloc/realloc.c -o CMakeFiles/21sh.dir/realloc/realloc.c.s
+
+CMakeFiles/21sh.dir/signal/signal.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/signal/signal.c.o: ../signal/signal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/21sh.dir/signal/signal.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/signal/signal.c.o   -c /Users/lcrawn/21sh/signal/signal.c
+
+CMakeFiles/21sh.dir/signal/signal.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/signal/signal.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/signal/signal.c > CMakeFiles/21sh.dir/signal/signal.c.i
+
+CMakeFiles/21sh.dir/signal/signal.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/signal/signal.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/signal/signal.c -o CMakeFiles/21sh.dir/signal/signal.c.s
+
+CMakeFiles/21sh.dir/sup/support.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sup/support.c.o: ../sup/support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/21sh.dir/sup/support.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sup/support.c.o   -c /Users/lcrawn/21sh/sup/support.c
+
+CMakeFiles/21sh.dir/sup/support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sup/support.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/sup/support.c > CMakeFiles/21sh.dir/sup/support.c.i
+
+CMakeFiles/21sh.dir/sup/support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sup/support.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/sup/support.c -o CMakeFiles/21sh.dir/sup/support.c.s
+
+CMakeFiles/21sh.dir/tty/set_attr.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/tty/set_attr.c.o: ../tty/set_attr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/21sh.dir/tty/set_attr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/tty/set_attr.c.o   -c /Users/lcrawn/21sh/tty/set_attr.c
+
+CMakeFiles/21sh.dir/tty/set_attr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/tty/set_attr.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/tty/set_attr.c > CMakeFiles/21sh.dir/tty/set_attr.c.i
+
+CMakeFiles/21sh.dir/tty/set_attr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/tty/set_attr.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/tty/set_attr.c -o CMakeFiles/21sh.dir/tty/set_attr.c.s
+
+CMakeFiles/21sh.dir/term/term_init.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/term/term_init.c.o: ../term/term_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/21sh.dir/term/term_init.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/term/term_init.c.o   -c /Users/lcrawn/21sh/term/term_init.c
+
+CMakeFiles/21sh.dir/term/term_init.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/term/term_init.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/term/term_init.c > CMakeFiles/21sh.dir/term/term_init.c.i
+
+CMakeFiles/21sh.dir/term/term_init.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/term/term_init.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/term/term_init.c -o CMakeFiles/21sh.dir/term/term_init.c.s
+
+CMakeFiles/21sh.dir/term/key_move.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/term/key_move.c.o: ../term/key_move.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/21sh.dir/term/key_move.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/term/key_move.c.o   -c /Users/lcrawn/21sh/term/key_move.c
+
+CMakeFiles/21sh.dir/term/key_move.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/term/key_move.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/term/key_move.c > CMakeFiles/21sh.dir/term/key_move.c.i
+
+CMakeFiles/21sh.dir/term/key_move.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/term/key_move.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/term/key_move.c -o CMakeFiles/21sh.dir/term/key_move.c.s
+
+CMakeFiles/21sh.dir/term/delete.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/term/delete.c.o: ../term/delete.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/21sh.dir/term/delete.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/term/delete.c.o   -c /Users/lcrawn/21sh/term/delete.c
+
+CMakeFiles/21sh.dir/term/delete.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/term/delete.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lcrawn/21sh/term/delete.c > CMakeFiles/21sh.dir/term/delete.c.i
+
+CMakeFiles/21sh.dir/term/delete.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/term/delete.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lcrawn/21sh/term/delete.c -o CMakeFiles/21sh.dir/term/delete.c.s
 
 # Object files for target 21sh
 21sh_OBJECTS = \
@@ -631,9 +696,12 @@ CMakeFiles/21sh.dir/libft/ft_strsub..c.s: cmake_force
 "CMakeFiles/21sh.dir/libft/ft_bzero.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_count_str.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_isprint.c.o" \
+"CMakeFiles/21sh.dir/libft/ft_itoa.c.o" \
+"CMakeFiles/21sh.dir/libft/ft_max.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_memalloc.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_memchr.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_memcpy.c.o" \
+"CMakeFiles/21sh.dir/libft/ft_memset.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_strcat.c.o" \
@@ -642,10 +710,13 @@ CMakeFiles/21sh.dir/libft/ft_strsub..c.s: cmake_force
 "CMakeFiles/21sh.dir/libft/ft_strcmp.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_strdel.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_strdup.c.o" \
+"CMakeFiles/21sh.dir/libft/ft_strjoin.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_strlen.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_strncmp.c.o" \
+"CMakeFiles/21sh.dir/libft/ft_strnew.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_strsplit.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_strstr.c.o" \
+"CMakeFiles/21sh.dir/libft/ft_strsub.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_strtok.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_strwdup.c.o" \
 "CMakeFiles/21sh.dir/libft/ft_strwlen.c.o" \
@@ -657,10 +728,9 @@ CMakeFiles/21sh.dir/libft/ft_strsub..c.s: cmake_force
 "CMakeFiles/21sh.dir/signal/signal.c.o" \
 "CMakeFiles/21sh.dir/sup/support.c.o" \
 "CMakeFiles/21sh.dir/tty/set_attr.c.o" \
-"CMakeFiles/21sh.dir/libft/ft_strjoin.c.o" \
-"CMakeFiles/21sh.dir/libft/ft_strnew.c.o" \
-"CMakeFiles/21sh.dir/libft/ft_memset.c.o" \
-"CMakeFiles/21sh.dir/libft/ft_strsub..c.o"
+"CMakeFiles/21sh.dir/term/term_init.c.o" \
+"CMakeFiles/21sh.dir/term/key_move.c.o" \
+"CMakeFiles/21sh.dir/term/delete.c.o"
 
 # External object files for target 21sh
 21sh_EXTERNAL_OBJECTS =
@@ -678,9 +748,12 @@ CMakeFiles/21sh.dir/libft/ft_strsub..c.s: cmake_force
 21sh: CMakeFiles/21sh.dir/libft/ft_bzero.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_count_str.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_isprint.c.o
+21sh: CMakeFiles/21sh.dir/libft/ft_itoa.c.o
+21sh: CMakeFiles/21sh.dir/libft/ft_max.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_memalloc.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_memchr.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_memcpy.c.o
+21sh: CMakeFiles/21sh.dir/libft/ft_memset.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_putchar_fd.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_putstr_fd.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_strcat.c.o
@@ -689,10 +762,13 @@ CMakeFiles/21sh.dir/libft/ft_strsub..c.s: cmake_force
 21sh: CMakeFiles/21sh.dir/libft/ft_strcmp.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_strdel.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_strdup.c.o
+21sh: CMakeFiles/21sh.dir/libft/ft_strjoin.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_strlen.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_strncmp.c.o
+21sh: CMakeFiles/21sh.dir/libft/ft_strnew.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_strsplit.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_strstr.c.o
+21sh: CMakeFiles/21sh.dir/libft/ft_strsub.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_strtok.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_strwdup.c.o
 21sh: CMakeFiles/21sh.dir/libft/ft_strwlen.c.o
@@ -704,13 +780,12 @@ CMakeFiles/21sh.dir/libft/ft_strsub..c.s: cmake_force
 21sh: CMakeFiles/21sh.dir/signal/signal.c.o
 21sh: CMakeFiles/21sh.dir/sup/support.c.o
 21sh: CMakeFiles/21sh.dir/tty/set_attr.c.o
-21sh: CMakeFiles/21sh.dir/libft/ft_strjoin.c.o
-21sh: CMakeFiles/21sh.dir/libft/ft_strnew.c.o
-21sh: CMakeFiles/21sh.dir/libft/ft_memset.c.o
-21sh: CMakeFiles/21sh.dir/libft/ft_strsub..c.o
+21sh: CMakeFiles/21sh.dir/term/term_init.c.o
+21sh: CMakeFiles/21sh.dir/term/key_move.c.o
+21sh: CMakeFiles/21sh.dir/term/delete.c.o
 21sh: CMakeFiles/21sh.dir/build.make
 21sh: CMakeFiles/21sh.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking C executable 21sh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Linking C executable 21sh"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/21sh.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -723,6 +798,6 @@ CMakeFiles/21sh.dir/clean:
 .PHONY : CMakeFiles/21sh.dir/clean
 
 CMakeFiles/21sh.dir/depend:
-	cd /home/humanbean/Desktop/42/21sh/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/humanbean/Desktop/42/21sh /home/humanbean/Desktop/42/21sh /home/humanbean/Desktop/42/21sh/cmake-build-debug /home/humanbean/Desktop/42/21sh/cmake-build-debug /home/humanbean/Desktop/42/21sh/cmake-build-debug/CMakeFiles/21sh.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/lcrawn/21sh/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lcrawn/21sh /Users/lcrawn/21sh /Users/lcrawn/21sh/cmake-build-debug /Users/lcrawn/21sh/cmake-build-debug /Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/21sh.dir/depend
 

@@ -20,6 +20,8 @@ SRC_EDT = line_edit/*.c
 
 SRC_RLC = realloc/*.c
 
+SRC_TMP = term/*.c
+
 SRC =	$(SRC_BUILT) \
 		$(SRC_EXEC) \
 		$(SRC_PARSE) \
@@ -28,7 +30,8 @@ SRC =	$(SRC_BUILT) \
 		$(SRC_ERR) \
 		$(SRC_TTY) \
 		$(SRC_EDT) \
-		$(SRC_RLC)
+		$(SRC_RLC) \
+		$(SRC_TMP)
 
 OBJ =   *.o
 
