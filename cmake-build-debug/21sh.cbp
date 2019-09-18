@@ -228,6 +228,12 @@
 		<Unit filename="/Users/lcrawn/21sh/sup/support.c">
 			<Option target="21sh"/>
 		</Unit>
+		<Unit filename="/Users/lcrawn/21sh/term/char.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/lcrawn/21sh/term/cursor.c">
+			<Option target="21sh"/>
+		</Unit>
 		<Unit filename="/Users/lcrawn/21sh/term/delete.c">
 			<Option target="21sh"/>
 		</Unit>

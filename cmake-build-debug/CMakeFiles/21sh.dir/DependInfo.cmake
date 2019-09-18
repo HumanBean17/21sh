@@ -48,6 +48,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/lcrawn/21sh/realloc/realloc.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/realloc/realloc.c.o"
   "/Users/lcrawn/21sh/signal/signal.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/signal/signal.c.o"
   "/Users/lcrawn/21sh/sup/support.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/sup/support.c.o"
+  "/Users/lcrawn/21sh/term/char.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/term/char.c.o"
+  "/Users/lcrawn/21sh/term/cursor.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/term/cursor.c.o"
   "/Users/lcrawn/21sh/term/delete.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/term/delete.c.o"
   "/Users/lcrawn/21sh/term/key_move.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/term/key_move.c.o"
   "/Users/lcrawn/21sh/term/term_init.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/term/term_init.c.o"

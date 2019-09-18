@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:13 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/17 13:37:07 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/18 14:42:17 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@
 
 pid_t	g_pid;
 char	**g_environ;
-struct  s_editorConfig g_E;
 struct  s_line g_line;
 
 struct  s_line
@@ -42,28 +41,6 @@ struct  s_line
     int        x;
 };
 
-struct 	s_draw
-{
-    char *b;
-    int len;
-};
-
-typedef struct  s_erow
-{
-	char 		*chars;
-    int 		size;
-}				t_erow;
-
-struct 	s_editorConfig {
-    int cx;
-    int cy;
-    int rowoff;
-    int screenrows;
-    int screencols;
-    int numrows;
-    t_erow *row;
-    struct termios orig_termios;
-};
 
 typedef struct	s_envfl
 {
@@ -73,24 +50,21 @@ typedef struct	s_envfl
 }				t_envfl;
 
 /* edit line funcs */
+void	del_char(void);
+void	promt(void);
+void 	move_promt(void);
 char 	*char_str(char c);
-void	delete(void);
-void	key_mv(void);
+void	delete_ch(void);
+int key_mv(void);
 int		ft_printnbr(int nbr);
 void	term_init(void);
-void    k_move();
+void 	move_back(void);
 void    new_line();
-void    insert_ch(char buf);
-void                edit_refresh(void);
-void                append_edit(char *s, size_t len);
-void                row_realloc(t_erow **tmp, int len);
-void                append(struct s_draw *ab, const char *s, int len);
+int insert_ch(char buf);
 struct termios		enable_raw(void);
-void                draw_rows(struct s_draw *ab);
 void	            disable_raw(struct termios orig_termios);
-void                open_edit();
 void                init_edit();
-
+void	ft_env(int ac, char **com);
 void			ft_parse(int ac, char **av);
 char			*ft_pathjoin(char *s1, char *s2);
 void			ft_cd(int ac, char **new_dir);

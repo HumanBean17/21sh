@@ -1311,6 +1311,60 @@ sup/support.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sup/support.c.s
 .PHONY : sup/support.c.s
 
+term/char.o: term/char.c.o
+
+.PHONY : term/char.o
+
+# target to build an object file
+term/char.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/char.c.o
+.PHONY : term/char.c.o
+
+term/char.i: term/char.c.i
+
+.PHONY : term/char.i
+
+# target to preprocess a source file
+term/char.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/char.c.i
+.PHONY : term/char.c.i
+
+term/char.s: term/char.c.s
+
+.PHONY : term/char.s
+
+# target to generate assembly for a file
+term/char.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/char.c.s
+.PHONY : term/char.c.s
+
+term/cursor.o: term/cursor.c.o
+
+.PHONY : term/cursor.o
+
+# target to build an object file
+term/cursor.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/cursor.c.o
+.PHONY : term/cursor.c.o
+
+term/cursor.i: term/cursor.c.i
+
+.PHONY : term/cursor.i
+
+# target to preprocess a source file
+term/cursor.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/cursor.c.i
+.PHONY : term/cursor.c.i
+
+term/cursor.s: term/cursor.c.s
+
+.PHONY : term/cursor.s
+
+# target to generate assembly for a file
+term/cursor.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/term/cursor.c.s
+.PHONY : term/cursor.c.s
+
 term/delete.o: term/delete.c.o
 
 .PHONY : term/delete.o
@@ -1560,6 +1614,12 @@ help:
 	@echo "... sup/support.o"
 	@echo "... sup/support.i"
 	@echo "... sup/support.s"
+	@echo "... term/char.o"
+	@echo "... term/char.i"
+	@echo "... term/char.s"
+	@echo "... term/cursor.o"
+	@echo "... term/cursor.i"
+	@echo "... term/cursor.s"
 	@echo "... term/delete.o"
 	@echo "... term/delete.i"
 	@echo "... term/delete.s"

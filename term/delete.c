@@ -1,8 +1,22 @@
 #include "minishell.h"
 
-void	delete(void)
+void	delete_ch(void)
 {
-	//write(STDOUT_FILENO, "1", 1);
-	tputs(tgetstr("al", NULL), STDOUT_FILENO, ft_printnbr);
-	//tputs(tgetstr("dc", NULL), STDOUT_FILENO, ft_printnbr);
+	char *tmp;
+	char *sub;
+
+	if (g_line.x > 0)
+	{
+		tmp = ft_strsub(g_line.str, 0, g_line.x - 1);
+		if (g_line.size - g_line.x > 0)
+			sub = ft_strsub(g_line.str, g_line.x, g_line.size - g_line.x);
+		else
+			sub = ft_strdup("");
+		ft_strdel(&g_line.str);
+		g_line.str = ft_strjoin(tmp, sub);
+		ft_strdel(&tmp);
+		ft_strdel(&sub);
+		g_line.x--;
+		g_line.size--;
+	}
 }

@@ -8,7 +8,7 @@ void	new_line(void)
 	write(STDOUT_FILENO, "\n", 1);
 }
 
-void	key_mv(void)
+int key_mv(void)
 {
 	char key_1;
 	char key_2;
@@ -19,13 +19,14 @@ void	key_mv(void)
 	{
 		if (key_2 == 68 && g_line.x > 0) // LEFT
 		{
-			tputs(tgetstr("le", NULL), STDOUT_FILENO, ft_printnbr);
 			g_line.x--;
+			return (-1);
 		}
-		else if (key_2 == 67) // RIGHT
+		else if (key_2 == 67 && g_line.x < g_line.size) // RIGHT
 		{
-			tputs(tgetstr("nd", NULL), STDOUT_FILENO, ft_printnbr);
 			g_line.x++;
+			return (1);
 		}
 	}
+	return (0);
 }
