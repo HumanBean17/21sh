@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:21 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/18 16:52:08 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/18 17:46:51 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,14 @@ int ft_loop(t_command **command)
         {
 			insert_ch(buf);
         }
+		if (buf == 1)
+			home();
+		else if (buf == 2)
+			prev_word();
+		else if (buf == 5)
+			end();
+		else if (buf == 6)
+			next_word();
 		else if (buf == 27) {
 			cur = key_mv(cur);
 		}

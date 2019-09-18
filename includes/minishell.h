@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:13 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/18 16:42:48 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/18 17:46:51 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,10 @@ typedef struct	s_envfl
 }				t_envfl;
 
 /* edit line funcs */
+void		home(void);
+void		end(void);
+void		next_word(void);
+void		prev_word(void);
 t_command * push_front(t_command **command, char *str);
 void		print_list(t_command *command);
 t_command	*new_command(char *str);

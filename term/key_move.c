@@ -1,6 +1,66 @@
 #include "minishell.h"
 
-t_command* new_line(t_command **command)
+/*
+** Ctrl + A bring the cursor to the beginning of the line.
+** Ctrl + E bring the cursor to the end of the line.
+** Ctrl + F bring jump forward to the next word.
+** Ctrl + B bring jump back to the previous word.
+*/
+
+void		end(void)
+{
+	while (g_line.x < g_line.size)
+	{
+		tputs(tgetstr("nd", NULL), STDOUT_FILENO, ft_printnbr);
+		g_line.x++;
+	}
+}
+
+void		prev_word(void)
+{
+	int i;
+
+	i = g_line.x - 1;
+	while (g_line.x > 0 && (g_line.str[i] == '\t' || g_line.str[i] == ' '))
+	{
+		tputs(tgetstr("le", NULL), STDOUT_FILENO, ft_printnbr);
+		g_line.x--;
+		i--;
+	}
+	while (g_line.x > 0 && (g_line.str[i] != '\t' && g_line.str[i] != ' '))
+	{
+		tputs(tgetstr("le", NULL), STDOUT_FILENO, ft_printnbr);
+		g_line.x--;
+		i--;
+	}
+}
+
+void		next_word(void)
+{
+	int i;
+
+	i = g_line.x;
+	while (g_line.x < g_line.size && (g_line.str[i] != '\t' && g_line.str[i] != ' '))
+	{
+		tputs(tgetstr("nd", NULL), STDOUT_FILENO, ft_printnbr);
+		g_line.x++;
+		i++;
+	}
+	while (g_line.x < g_line.size && (g_line.str[i] == '\t' || g_line.str[i] == ' '))
+	{
+		tputs(tgetstr("nd", NULL), STDOUT_FILENO, ft_printnbr);
+		g_line.x++;
+		i++;
+	}
+}
+
+void		home(void)
+{
+	move_promt();
+	g_line.x = 0;
+}
+
+t_command *new_line(t_command **command)
 {
 	t_command *tmp;
 
