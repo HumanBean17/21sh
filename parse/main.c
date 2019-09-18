@@ -6,16 +6,19 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:21 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/18 14:37:17 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/18 16:52:08 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-static int ft_loop()
+int ft_loop(t_command **command)
 {
-	char    buf;
+	char				buf;
+	static t_command 	*cur;
 
+	if (!(*command))
+		cur = NULL;
 	while (1)
 	{
 		buf = '\0';
@@ -25,16 +28,17 @@ static int ft_loop()
 			insert_ch(buf);
         }
 		else if (buf == 27) {
-			key_mv();
+			cur = key_mv(cur);
 		}
 		else if (buf == 127)
 			delete_ch();
 		else if (buf == '\n')
 		{
-            new_line();
+			cur = new_line(command);
+			//print_list(*command);
 			return (1);
 		}
-		if (buf == '\0')
+		if (buf == 0)
 			return (0);
 		move_promt();
 		tputs(tgetstr("cd", NULL), STDOUT_FILENO, ft_printnbr);
@@ -48,17 +52,20 @@ static int ft_loop()
 int	main(int argc, char **argv, char **envp)
 {
     struct 	termios orig_termios;
+    t_command		*command;
+
 
 	if (argc > 1)
 		return (0);
 	(void)argv;
-	//ft_signal();
-	//g_environ = ft_envcpy(envp);
+	/*ft_signal();
+	g_environ = ft_envcpy(envp);*/
     orig_termios = enable_raw();
 	init_edit();
 	term_init();
+	command = NULL;
 	promt();
-	while (ft_loop()) {
+	while (ft_loop(&command)) {
         promt();
     }
 	disable_raw(orig_termios);

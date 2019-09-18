@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:13 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/18 14:42:17 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/18 16:42:48 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,20 @@ pid_t	g_pid;
 char	**g_environ;
 struct  s_line g_line;
 
+typedef struct 	s_command
+{
+	char				*str;
+	struct s_command 	*next;
+	struct s_command	*prev;
+}				t_command;
+
+
 struct  s_line
 {
     char            *str;
     size_t          size;
-    int        x;
+    int        		x;
 };
-
 
 typedef struct	s_envfl
 {
@@ -50,16 +57,18 @@ typedef struct	s_envfl
 }				t_envfl;
 
 /* edit line funcs */
-void	del_char(void);
+t_command * push_front(t_command **command, char *str);
+void		print_list(t_command *command);
+t_command	*new_command(char *str);
 void	promt(void);
 void 	move_promt(void);
 char 	*char_str(char c);
 void	delete_ch(void);
-int key_mv(void);
+t_command *key_mv(t_command *cur);
 int		ft_printnbr(int nbr);
 void	term_init(void);
 void 	move_back(void);
-void    new_line();
+t_command * new_line(t_command **command);
 int insert_ch(char buf);
 struct termios		enable_raw(void);
 void	            disable_raw(struct termios orig_termios);
