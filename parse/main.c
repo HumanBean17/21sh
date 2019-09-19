@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:21 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/19 19:46:27 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/19 20:14:47 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,6 @@ int	main(int argc, char **argv, char **envp)
     struct 	termios orig_termios;
     t_command		*command;
     int 			f;
-
 
 	if (argc > 1)
 		return (0);

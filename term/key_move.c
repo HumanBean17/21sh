@@ -110,7 +110,7 @@ t_command *key_mv(t_command *cur)
 	read(STDIN_FILENO, &key_2, 1);
 	if (key_1 == 91)
 	{
-		if (key_2 == 68 && g_line.x > 0) // LEFT
+		if (key_2 == 68 && g_line.x - g_line.fix > 0) // LEFT
 			g_line.x--;
 		else if (key_2 == 67 && g_line.x < g_line.size) // RIGHT
 			g_line.x++;
