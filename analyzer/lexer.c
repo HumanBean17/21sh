@@ -11,9 +11,12 @@ int		isop(char c)
 
 char	*skip_token(char *s)
 {
+	int max_op_len;
+
+	max_op_len = 2;
 	if (isop(*s))
 	{
-		while (*s && isop(*s))
+		while (isop(*s) && max_op_len--)
 			s++;
 	}
 	else
