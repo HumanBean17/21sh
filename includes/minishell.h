@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:13 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/18 17:46:51 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/19 19:41:33 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,9 @@ struct  s_line
 {
     char            *str;
     size_t          size;
+    int 			fix;
     int        		x;
+    int 			y;
 };
 
 typedef struct	s_envfl
@@ -57,15 +59,18 @@ typedef struct	s_envfl
 }				t_envfl;
 
 /* edit line funcs */
+void	quote(void);
+void del_print(int f);
 void		home(void);
 void		end(void);
+int 	char_find(const char *str, char c);
 void		next_word(void);
 void		prev_word(void);
 t_command * push_front(t_command **command, char *str);
 void		print_list(t_command *command);
 t_command	*new_command(char *str);
 void	promt(void);
-void 	move_promt(void);
+void move_promt(int f);
 char 	*char_str(char c);
 void	delete_ch(void);
 t_command *key_mv(t_command *cur);

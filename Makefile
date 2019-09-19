@@ -22,6 +22,8 @@ SRC_RLC = realloc/*.c
 
 SRC_TMP = term/*.c
 
+SRC_PRT = print/*.c
+
 SRC =	$(SRC_BUILT) \
 		$(SRC_EXEC) \
 		$(SRC_PARSE) \
@@ -31,7 +33,8 @@ SRC =	$(SRC_BUILT) \
 		$(SRC_TTY) \
 		$(SRC_EDT) \
 		$(SRC_RLC) \
-		$(SRC_TMP)
+		$(SRC_TMP) \
+		$(SRC_PRT)
 
 OBJ =   *.o
 

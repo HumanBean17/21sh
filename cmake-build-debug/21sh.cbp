@@ -219,6 +219,9 @@
 		<Unit filename="/Users/lcrawn/21sh/parse/parse.c">
 			<Option target="21sh"/>
 		</Unit>
+		<Unit filename="/Users/lcrawn/21sh/print/print.c">
+			<Option target="21sh"/>
+		</Unit>
 		<Unit filename="/Users/lcrawn/21sh/realloc/realloc.c">
 			<Option target="21sh"/>
 		</Unit>

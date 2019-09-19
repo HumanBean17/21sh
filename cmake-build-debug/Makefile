@@ -1230,6 +1230,33 @@ parse/parse.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/parse/parse.c.s
 .PHONY : parse/parse.c.s
 
+print/print.o: print/print.c.o
+
+.PHONY : print/print.o
+
+# target to build an object file
+print/print.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/print/print.c.o
+.PHONY : print/print.c.o
+
+print/print.i: print/print.c.i
+
+.PHONY : print/print.i
+
+# target to preprocess a source file
+print/print.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/print/print.c.i
+.PHONY : print/print.c.i
+
+print/print.s: print/print.c.s
+
+.PHONY : print/print.s
+
+# target to generate assembly for a file
+print/print.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/print/print.c.s
+.PHONY : print/print.c.s
+
 realloc/realloc.o: realloc/realloc.c.o
 
 .PHONY : realloc/realloc.o
@@ -1605,6 +1632,9 @@ help:
 	@echo "... parse/parse.o"
 	@echo "... parse/parse.i"
 	@echo "... parse/parse.s"
+	@echo "... print/print.o"
+	@echo "... print/print.i"
+	@echo "... print/print.s"
 	@echo "... realloc/realloc.o"
 	@echo "... realloc/realloc.i"
 	@echo "... realloc/realloc.s"

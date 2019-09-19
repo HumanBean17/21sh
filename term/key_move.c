@@ -56,7 +56,7 @@ void		next_word(void)
 
 void		home(void)
 {
-	move_promt();
+	move_promt(0);
 	g_line.x = 0;
 }
 
@@ -68,7 +68,8 @@ t_command *new_line(t_command **command)
 	ft_strdel(&g_line.str);
 	g_line.size = 0;
 	g_line.x = 0;
-	write(STDOUT_FILENO, "\n", 1);
+	g_line.y = 0;
+	g_line.fix = 0;
 	return (tmp);
 }
 

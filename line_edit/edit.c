@@ -39,5 +39,7 @@ void    init_edit()
 {
 	g_line.str = NULL;
 	g_line.size = 0;
+	g_line.fix = 0;
 	g_line.x = 0;
+	g_line.y = 0;
 }

@@ -6,14 +6,15 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:21 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/18 17:46:51 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/19 19:37:34 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-int ft_loop(t_command **command)
+int ft_loop(t_command **command, int f)
 {
+	int 				quote;
 	char				buf;
 	static t_command 	*cur;
 
@@ -24,9 +25,7 @@ int ft_loop(t_command **command)
 		buf = '\0';
 		read(STDIN_FILENO, &buf, 1);
 		if (ft_isprint(buf))
-        {
 			insert_ch(buf);
-        }
 		if (buf == 1)
 			home();
 		else if (buf == 2)
@@ -35,24 +34,32 @@ int ft_loop(t_command **command)
 			end();
 		else if (buf == 6)
 			next_word();
-		else if (buf == 27) {
+		else if (buf == 27)
 			cur = key_mv(cur);
-		}
 		else if (buf == 127)
 			delete_ch();
 		else if (buf == '\n')
 		{
-			cur = new_line(command);
-			//print_list(*command);
-			return (1);
+			write(STDOUT_FILENO, "\n", 1);
+			quote = char_find(g_line.str, '\'');
+			if (quote == 0 || quote % 2 == 0)
+			{
+				ft_do(ft_strsplit(g_line.str, ';'));
+				cur = new_line(command);
+				f = 1;
+				return (f);
+			}
+			else
+			{
+				g_line.y++;
+				g_line.fix += g_line.x;
+				f = 2;
+				return (f);
+			}
 		}
 		if (buf == 0)
 			return (0);
-		move_promt();
-		tputs(tgetstr("cd", NULL), STDOUT_FILENO, ft_printnbr);
-		write(STDOUT_FILENO, g_line.str, g_line.size);
-		move_promt();
-		move_back();
+		del_print(f);
 	}
 	return (0);
 }
@@ -61,27 +68,28 @@ int	main(int argc, char **argv, char **envp)
 {
     struct 	termios orig_termios;
     t_command		*command;
+    int 			f;
 
 
 	if (argc > 1)
 		return (0);
 	(void)argv;
-	/*ft_signal();
-	g_environ = ft_envcpy(envp);*/
+	ft_signal();
+	g_environ = ft_envcpy(envp);
     orig_termios = enable_raw();
 	init_edit();
 	term_init();
 	command = NULL;
 	promt();
-	while (ft_loop(&command)) {
-        promt();
-    }
+	f = 1;
+	while ((f = ft_loop(&command, f)))
+	{
+		if (f == 1)
+			promt();
+		else if (f == 2)
+			quote();
+	}
 	disable_raw(orig_termios);
-	//free_tab(g_environ, ft_count_str(g_environ));
+	free_tab(g_environ, ft_count_str(g_environ));
 	return (0);
-}
-
-void	promt(void)
-{
-	write(STDOUT_FILENO, "$> ", 3);
 }

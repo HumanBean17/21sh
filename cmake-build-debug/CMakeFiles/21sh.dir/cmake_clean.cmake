@@ -49,6 +49,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/21sh.dir/term/delete.c.o"
   "CMakeFiles/21sh.dir/term/cursor.c.o"
   "CMakeFiles/21sh.dir/term/char.c.o"
+  "CMakeFiles/21sh.dir/print/print.c.o"
   "21sh.pdb"
   "21sh"
 )

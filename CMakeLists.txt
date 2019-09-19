@@ -55,4 +55,4 @@ add_executable(21sh
         realloc/realloc.c
         signal/signal.c
         sup/support.c
-        tty/set_attr.c term/term_init.c term/key_move.c term/delete.c term/cursor.c term/char.c)
+        tty/set_attr.c term/term_init.c term/key_move.c term/delete.c term/cursor.c term/char.c print/print.c)

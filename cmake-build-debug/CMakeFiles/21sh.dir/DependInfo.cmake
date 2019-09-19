@@ -45,6 +45,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/lcrawn/21sh/line_edit/edit.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/line_edit/edit.c.o"
   "/Users/lcrawn/21sh/parse/main.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/parse/main.c.o"
   "/Users/lcrawn/21sh/parse/parse.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/parse/parse.c.o"
+  "/Users/lcrawn/21sh/print/print.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/print/print.c.o"
   "/Users/lcrawn/21sh/realloc/realloc.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/realloc/realloc.c.o"
   "/Users/lcrawn/21sh/signal/signal.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/signal/signal.c.o"
   "/Users/lcrawn/21sh/sup/support.c" "/Users/lcrawn/21sh/cmake-build-debug/CMakeFiles/21sh.dir/sup/support.c.o"

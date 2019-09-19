@@ -10,4 +10,5 @@ void	term_init(void)
 	char b[32];
 
 	tgetent(b, getenv("TERM"));
+	tputs(tgetstr("cl", NULL), STDOUT_FILENO, ft_printnbr);
 }
