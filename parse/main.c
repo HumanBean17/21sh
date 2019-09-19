@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:21 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/19 19:37:34 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/19 19:46:27 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int ft_loop(t_command **command, int f)
 			else
 			{
 				g_line.y++;
-				g_line.fix += g_line.x;
+				g_line.fix = g_line.x;
 				f = 2;
 				return (f);
 			}
