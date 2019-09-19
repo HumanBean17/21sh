@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "shell.h"
 #include <stdio.h>
 
 static int	ft_loop(char *buf, size_t *buff_size)
