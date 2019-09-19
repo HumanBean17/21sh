@@ -19,9 +19,16 @@ typedef struct		s_token
     struct s_token	*next;
 }					t_token;
 
+typedef	struct		s_tree
+{
+	t_type			type;
+	char			*val;
+	struct	s_tree	*left;
+	struct	s_tree	*right;
+}					t_tree;
+
 t_token				*get_last(t_token *lst);
 t_token				*new_token(char *str);
 t_token				*tokenize(char *inp);
-int					valid_tokens(t_token *lst);
 
 #endif
