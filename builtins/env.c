@@ -96,7 +96,7 @@ void	ft_env(int ac, char **com)
 	if (fl.u)
 		env_uns(&com[j++]);
 	if (com[j])
-		ft_parse(ft_count_str(&com[j]), &com[j]);
+		ft_parse_command(ft_count_str(&com[j]), &com[j]);
 	free_tab(g_environ, ft_count_str(g_environ));
 	g_environ = fl.save_environ;
 }

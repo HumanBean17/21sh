@@ -66,7 +66,7 @@ void pasteenv(char **com)
 	}
 }
 
-void	ft_parse(int ac, char **command)
+void	ft_parse_command(int ac, char **command)
 {
 	if (!(ft_strcmp("exit", command[0])))
 		exit(0);
@@ -106,7 +106,7 @@ void	ft_do(char **inp)
 			continue ;
 		}
 		pasteenv(command);
-		ft_parse(ac, command);
+		ft_parse_command(ac, command);
 		free_tab(command, ac);
 		i++;
 	}

@@ -36,7 +36,7 @@ typedef struct	s_envfl
 	char		**save_environ;
 }				t_envfl;
 
-void			ft_parse(int ac, char **av);
+void			ft_parse_command(int ac, char **av);
 char			*ft_pathjoin(char *s1, char *s2);
 void			ft_cd(int ac, char **new_dir);
 void			ft_echo(char **str);
