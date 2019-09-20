@@ -1,14 +1,13 @@
 #ifndef ANALYZER_H
 #define ANALYZER_H
 
+# include <string.h>
 # define TCONST 100
-# define TEXEX 101
-# define TBRANCHOPEN 198
-# define TBRANCHCLOSE 197
+# define TEXEX 199
 # define TPIPE 150
-# define TREDIRECT 250
-# define TREDIRECTX2 350
-# define TSEMICOL 199
+# define TGREAT 250
+# define TDGREAT 350
+# define TSEMICOL 101
 
 typedef unsigned short t_type;
 
@@ -30,5 +29,8 @@ typedef	struct		s_tree
 t_token				*get_last(t_token *lst);
 t_token				*new_token(char *str);
 t_token				*tokenize(char *inp);
+t_tree				*new_tree_elem(t_token *token);
+size_t				count_tokens(t_token *lst);
+t_tree				*make_tree(t_token *token_list);
 
 #endif
