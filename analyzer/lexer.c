@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "shell.h"
 #include <stdio.h>
 
 int		isop(char c)
