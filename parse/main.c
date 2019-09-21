@@ -6,15 +6,14 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:21 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/19 20:14:47 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/21 10:19:17 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-int ft_loop(t_command **command, int f)
+int ft_loop(t_command **command, int *q)
 {
-	int 				quote;
 	char				buf;
 	static t_command 	*cur;
 
@@ -41,25 +40,23 @@ int ft_loop(t_command **command, int f)
 		else if (buf == '\n')
 		{
 			write(STDOUT_FILENO, "\n", 1);
-			quote = char_find(g_line.str, '\'');
-			if (quote == 0 || quote % 2 == 0)
+			(*q) = quote_find(g_line.str);
+			if (*q == 0 || *q % 2 == 0)
 			{
 				ft_do(ft_strsplit(g_line.str, ';'));
 				cur = new_line(command);
-				f = 1;
-				return (f);
+				return (1);
 			}
 			else
 			{
 				g_line.y++;
 				g_line.fix = g_line.x;
-				f = 2;
-				return (f);
+				return (1);
 			}
 		}
 		if (buf == 0)
 			return (0);
-		del_print(f);
+		del_print(*q);
 	}
 	return (0);
 }
@@ -68,7 +65,7 @@ int	main(int argc, char **argv, char **envp)
 {
     struct 	termios orig_termios;
     t_command		*command;
-    int 			f;
+    int 			q;
 
 	if (argc > 1)
 		return (0);
@@ -80,12 +77,12 @@ int	main(int argc, char **argv, char **envp)
 	term_init();
 	command = NULL;
 	promt();
-	f = 1;
-	while ((f = ft_loop(&command, f)))
+	q = 0;
+	while ((ft_loop(&command, &q)))
 	{
-		if (f == 1)
+		if (q % 2 == 0)
 			promt();
-		else if (f == 2)
+		else
 			quote();
 	}
 	disable_raw(orig_termios);

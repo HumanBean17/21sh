@@ -6,14 +6,14 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:13 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/19 19:41:33 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/09/21 10:00:49 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MINISHELL_H
 # define MINISHELL_H
 # define PATH_MAX 1024
-# define ABUF_INIT {NULL, 0}
+# define IS_QUOTE if (q == 0 || q % 2 == 0)
 
 # include <stdlib.h>
 # include "libft.h"
@@ -27,7 +27,6 @@
 # include <sys/wait.h>
 # include <curses.h>
 # include <term.h>
-
 #include <stdio.h>
 
 pid_t	g_pid;
@@ -63,7 +62,7 @@ void	quote(void);
 void del_print(int f);
 void		home(void);
 void		end(void);
-int 	char_find(const char *str, char c);
+int quote_find(const char *str);
 void		next_word(void);
 void		prev_word(void);
 t_command * push_front(t_command **command, char *str);

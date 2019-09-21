@@ -1,19 +1,25 @@
 #include "minishell.h"
 
-int 	char_find(const char *str, char c)
+int quote_find(const char *str)
 {
 	int i;
-	int count;
+	int d_q;
+	int o_q;
 
 	i = 0;
-	count = 0;
+	d_q = 0;
+	o_q = 0;
 	while (str[i])
 	{
-		if (str[i] == c)
-			count++;
+		if (str[i] == '\'' && d_q == 0)
+			o_q++;
+		else if (str[i] == '"' && o_q == 0)
+			d_q++;
 		i++;
 	}
-	return (count);
+	if (d_q == 0)
+		return (o_q);
+	return (d_q);
 }
 
 char 	*char_str(char c)
