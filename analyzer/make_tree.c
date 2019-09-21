@@ -51,8 +51,7 @@ void	rmtoken(t_token **token_list, t_token *todel)
 	tmp->next = 0;
 }
 
-
-t_tree	*make_tree(t_token *token_list)
+t_tree	*make_tree(t_token *token_list, t_tree *parent)
 {
 	t_token *token_list_right;
 	t_token *token_min;
@@ -61,10 +60,10 @@ t_tree	*make_tree(t_token *token_list)
 	if (!token_list)
 		return (0);
 	token_min = find_min(token_list);
-	node = new_tree_elem(token_min);
+	node = new_tree_elem(token_min, parent);
 	token_list_right = token_min->next;
 	rmtoken(&token_list, token_min);
-	node->left = make_tree(token_list);
-	node->right = make_tree(token_list_right);
+	node->left = make_tree(token_list, node);
+	node->right = make_tree(token_list_right, node);
 	return (node);
 }

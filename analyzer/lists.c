@@ -69,12 +69,16 @@ size_t count_tokens(t_token *lst)
 	return (res);
 }
 
-t_tree	*new_tree_elem(t_token *token)
+t_tree	*new_tree_elem(t_token *token, t_tree *parent)
 {
 	t_tree *elem;
 
 	if (!(elem = (t_tree *)malloc(sizeof(t_tree))))
 		return (0);
+	if (parent)
+		elem->parent = parent;
+	else
+		elem->parent = 0;
 	elem->type = token->type;
 	elem->val = token->val;
 	elem->right = 0;
