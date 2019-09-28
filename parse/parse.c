@@ -66,7 +66,7 @@ void pasteenv(char **com)
 	}
 }
 
-void	ft_parse_command(int ac, char **command)
+void	ft_parse_command(int ac, char **command, int fd0, int fd1)
 {
 	if (!(ft_strcmp("exit", command[0])))
 		exit(0);
@@ -85,30 +85,17 @@ void	ft_parse_command(int ac, char **command)
 	else if (!(ft_strcmp("cd", command[0])))
 		ft_cd(ft_count_str(&command[1]), &command[1]);
 	else
-		ft_execute(command);
+		return (ft_execute(command, fd0, fd1));
 }
 
-void	ft_do(char **inp)
+void	ft_do(char *command, int fd0, int fd1)
 {
-	int		i;
 	int		ac;
-	char	**command;
 
-	i = 0;
-	while (inp[i])
-	{
-		command = ft_strtok(inp[i]);
-		ac = ft_count_str(command);
-		if (!*command)
-		{
-			free(command);
-			i++;
-			continue ;
-		}
-		pasteenv(command);
-		ft_parse_command(ac, command);
-		free_tab(command, ac);
-		i++;
-	}
-	free_tab(inp, ft_count_str(inp));
+	char	**split_com;
+	split_com = ft_strtok(command);
+	ac = ft_count_str(split_com);
+	pasteenv(split_com);
+	ft_parse_command(ac, split_com, fd0, fd1);
+	free_tab(split_com, ac);
 }
