@@ -69,14 +69,37 @@ int		check_rights(char *fname)
 	return (0);
 }
 
-void	ft_execute(char **com)
+void	dup_fd(int fd1, int fd0)
 {
-	char *fname;
+	if (fd0 >= 0)
+	{
+		dup2(fd0, STDIN_FILENO);
+		close(fd0);
+	}
+	if (fd1 >= 0)
+	{
+		dup2(fd1, STDOUT_FILENO);
+		close(fd1);
+	}
+}
+
+void	ft_closefd(int fd0, int fd1)
+{
+	if (fd0 >= 0)
+		close(fd0);
+	if (fd1 >= 0)
+		close(fd1);
+}
+
+void	ft_execute(char **com, int fd0, int fd1)
+{
+	char	*fname;
 
 	fname = search_bin(com[0], ft_getenv("PATH"));
 	g_pid = fork();
 	if (!g_pid)
 	{
+		dup_fd(fd1, fd0);
 		if (execve(fname, com, g_environ) < 0)
 		{
 			if (check_rights(fname) < 0)
@@ -86,7 +109,6 @@ void	ft_execute(char **com)
 			exit(0);
 		}
 	}
-	else
-		g_pid = wait(&g_pid);
+	ft_closefd(fd0, fd1);
 	free(fname);
 }
