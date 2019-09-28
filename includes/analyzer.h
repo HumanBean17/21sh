@@ -33,5 +33,6 @@ t_token				*tokenize(char *inp);
 t_tree				*new_tree_elem(t_token *token, t_tree *parent);
 size_t				count_tokens(t_token *lst);
 t_tree				*make_tree(t_token *token_list, t_tree *parent);
+void				parse_tree(t_tree *tree);
 
 #endif
