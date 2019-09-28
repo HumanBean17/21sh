@@ -21,7 +21,7 @@ t_token	*find_min(t_token *token_list)
 	tmp = token_list->type;
 	while (token_list)
 	{
-		if ((token_list->type % 100) < tmp % 100)
+		if ((token_list->type % TCONST) < tmp % TCONST)
 		{
 			tmp = token_list->type;
 			res = token_list;
