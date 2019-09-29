@@ -29,23 +29,16 @@ void	add_to_fdlist(int fd0, int fd1, int *tmp)
 {
 	while (*tmp >= 0)
 		tmp++;
-	tmp[0] = fd0;
-	tmp[1] = fd1;
+	tmp[0] = fd1;
+	tmp[1] = fd0;
 }
 
 int	get_from_fdlist(int *fdlist)
 {
-	int i;
-	int tmp;
+	static int i;
 
-	i = 0;
-	if (fdlist[i] < 0)
-		return (-1);
-	while (fdlist[i] >= 0)
-		i++;
-	tmp = fdlist[--i];
-	fdlist[i] = -1;
-	return (tmp);
+	i++;
+	return (fdlist[i - 1]);
 }
 
 int *ft_fdmalloc(size_t size)
