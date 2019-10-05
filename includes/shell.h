@@ -13,8 +13,9 @@
 #ifndef SHELL_H
 # define SHELL_H
 # define PATH_MAX 1024
-# define NONFD 0
 # include "analyzer.h"
+# include <fcntl.h>
+# include <errno.h>
 # include <stdlib.h>
 # include "libft.h"
 # include <string.h>
@@ -37,7 +38,7 @@ typedef struct	s_envfl
 	char		**save_environ;
 }				t_envfl;
 
-void			ft_parse_command(int ac, char **av, int fd0, int fd1);
+int				check_built(char **av);
 char			*ft_pathjoin(char *s1, char *s2);
 void			ft_cd(int ac, char **new_dir);
 void			ft_echo(char **str);
@@ -47,14 +48,14 @@ void			ft_signal(void);
 int				ft_realloc(char **buf, size_t add_to_buf);
 void			ft_setenv(int ac, char **value);
 void			ft_unsetenv(int ac, char **av);
-void			ft_execute(char **com, int fd0, int fd1);
+void			ft_execute(t_tree *leaf, int fd0);
 void			ft_delenv(char *com);
 void			ft_env(int ac, char **com);
 int				add_env(char *env, char *value);
-void			ft_do(char *com, int fd0, int fd1);
 char			*search_bin(char *filename, char *path);
 void			free_tab(char **tab, int i);
 int				env_err();
+void			ft_manage_proc(t_tree *node, int fd0);
 char			**empty_cpy();
 void			pwd_update(char *new_dir);
 void			put_all_env(void);

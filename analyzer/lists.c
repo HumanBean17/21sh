@@ -21,21 +21,24 @@ t_token *get_last(t_token *lst)
 	return (lst);
 }
 
-short get_token_type(char const *str)
+void get_token_type(t_token *token)
 {
-	if (*str == '|')
-		return (TPIPE);
-	else if (*str == ';')
-		return (TSEMICOL);
-	else if (*str == '>')
+	if (token->type)
+		return ;
+	if (*token->val == '|')
+		token->type = TPIPE;
+	else if (*token->val == ';')
+		token->type = TSEMICOL;
+	else if (*token->val == '>')
 	{
-		if (*str + 1 == '>')
-			return (TDGREAT);
+		token->next->type = TFILE;
+		if (*token->val + 1 == '>')
+			token->type = TDGREAT;
 		else
-			return (TGREAT);
+			token->type = TGREAT;
 	}
 	else
-		return (TEXEX);
+		token->type = TEXEX;
 }
 
 t_token *new_token(char *str)
@@ -50,7 +53,7 @@ t_token *new_token(char *str)
 		return (0);
 	if (!(token = (t_token *)malloc(sizeof(t_token))))
 		exit(123);
-	token->type = get_token_type(str);
+	token->type = 0;
 	token->val = res;
 	token->next = 0;
 	return (token);
@@ -77,7 +80,7 @@ t_tree	*new_tree_elem(t_token *token, t_tree *parent)
 		exit(123);
 	elem->parent = parent;
 	elem->type = token->type;
-	elem->val = token->val;
+	elem->val = ft_strtok(token->val);
 	elem->right = 0;
 	elem->left = 0;
 	return (elem);

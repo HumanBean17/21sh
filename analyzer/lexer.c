@@ -53,6 +53,15 @@ t_token *tokendup(char *str, t_token *lst)
 	return (lst);
 }
 
+void	set_types(t_token *lst)
+{
+	while (lst)
+	{
+		get_token_type(lst);
+		lst = lst->next;
+	}
+}
+
 t_token	*tokenize(char *inp)
 {
 	t_token *lst;
@@ -65,5 +74,6 @@ t_token	*tokenize(char *inp)
 		lst = tokendup(inp, lst);
 		inp = skip_token(inp);
 	}
+	set_types(lst);
 	return (lst);
 }

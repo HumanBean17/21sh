@@ -66,13 +66,12 @@ void pasteenv(char **com)
 	}
 }
 
-void	ft_parse_command(int ac, char **command, int fd0, int fd1)
+int	check_built(char **command)
 {
-	if (!(ft_strcmp("exit", command[0])))
-		exit(0);
-	else if (!(ft_strcmp("clear", command[0])))
-		write(1, "\e[1;1H\e[2J", 11);
-	else if (!(ft_strcmp("setenv", command[0])))
+	int ac;
+
+	ac = ft_count_str(command);
+	if (!(ft_strcmp("setenv", command[0])))
 		ft_setenv(ac, command);
 	else if (!(ft_strcmp("unsetenv", command[0])))
 		ft_unsetenv(ac, command);
@@ -85,17 +84,18 @@ void	ft_parse_command(int ac, char **command, int fd0, int fd1)
 	else if (!(ft_strcmp("cd", command[0])))
 		ft_cd(ft_count_str(&command[1]), &command[1]);
 	else
-		return (ft_execute(command, fd0, fd1));
+		return (-1);
+	return (0);
 }
 
-void	ft_do(char *command, int fd0, int fd1)
-{
-	int		ac;
-
-	char	**split_com;
-	split_com = ft_strtok(command);
-	ac = ft_count_str(split_com);
-	pasteenv(split_com);
-	ft_parse_command(ac, split_com, fd0, fd1);
-	free_tab(split_com, ac);
-}
+//void	ft_do(char *command, int fd0, int fd1)
+//{
+//	int		ac;
+//
+//	char	**split_com;
+//	split_com = ft_strtok(command);
+//	ac = ft_count_str(split_com);
+//	pasteenv(split_com);
+//	ft_parse_command(ac, split_com, fd0, fd1);
+//	free_tab(split_com, ac);
+//}

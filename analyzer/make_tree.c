@@ -21,7 +21,7 @@ t_token	*find_min(t_token *token_list)
 	tmp = token_list->type;
 	while (token_list)
 	{
-		if ((token_list->type % TCONST) < tmp % TCONST)
+		if ((token_list->type % TCONST) <= tmp % TCONST)
 		{
 			tmp = token_list->type;
 			res = token_list;
@@ -63,7 +63,7 @@ t_tree	*make_tree(t_token *token_list, t_tree *parent)
 	node = new_tree_elem(token_min, parent);
 	token_list_right = token_min->next;
 	rmtoken(&token_list, token_min);
-	node->left = make_tree(token_list, node);
-	node->right = make_tree(token_list_right, node);
+	node->left = make_tree(token_list_right, node);
+	node->right = make_tree(token_list, node);
 	return (node);
 }
