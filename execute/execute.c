@@ -145,6 +145,8 @@ void	ft_execute(t_tree *leaf, int fd1)
 		dup2(fd1, STDOUT_FILENO);
 		close(fd1);
 	}
+	if ((check_built(leaf->val)) == 0)
+		return ;
 	fname = search_bin(leaf->val[0], ft_getenv("PATH"));
 	if (execve(fname, leaf->val, g_environ) < 0)
 	{

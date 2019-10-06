@@ -85,7 +85,7 @@ int	check_built(char **command)
         ft_putdir(ac, command);
     else
         return (-1);
-	return (0);
+	exit (0);
 }
 
 void	ft_do(char *inp)
