@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "shell.h"
 
 /*
 ** Ctrl + A bring the cursor to the beginning of the line.

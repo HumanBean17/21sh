@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "shell.h"
 
 void	disable_raw(struct termios orig_termios)
 {

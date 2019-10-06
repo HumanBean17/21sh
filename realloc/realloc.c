@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "shell.h"
 
 void		print_list(t_command *command)
 {

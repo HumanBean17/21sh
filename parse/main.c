@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "shell.h"
 
 int ft_loop(t_command **command, int *q)
 {
@@ -43,7 +43,7 @@ int ft_loop(t_command **command, int *q)
 			(*q) = quote_find(g_line.str);
 			if (*q == 0 || *q % 2 == 0)
 			{
-				ft_do(ft_strsplit(g_line.str, ';'));
+				ft_do(g_line.str);
 				cur = new_line(command);
 				return (1);
 			}

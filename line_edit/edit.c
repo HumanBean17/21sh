@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "shell.h"
 
 int insert_ch(char buf)
 {

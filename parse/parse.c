@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "shell.h"
 
 char *insert(char *s, char *envname, char *tmp)
 {
@@ -88,27 +88,7 @@ void	ft_parse(int ac, char **command)
 		ft_execute(command);
 }
 
-void	ft_do(char **inp)
+void	ft_do(char *inp)
 {
-	int		i;
-	int		ac;
-	char	**command;
 
-	i = 0;
-	while (inp[i])
-	{
-		command = ft_strtok(inp[i]);
-		ac = ft_count_str(command);
-		if (!*command)
-		{
-			free(command);
-			i++;
-			continue ;
-		}
-		pasteenv(command);
-		ft_parse(ac, command);
-		free_tab(command, ac);
-		i++;
-	}
-	free_tab(inp, ft_count_str(inp));
 }
