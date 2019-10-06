@@ -24,6 +24,8 @@ SRC_TMP = term/*.c
 
 SRC_PRT = print/*.c
 
+SRC_ANAL = analyzer/*.c
+
 SRC =	$(SRC_BUILT) \
 		$(SRC_EXEC) \
 		$(SRC_PARSE) \
@@ -34,7 +36,8 @@ SRC =	$(SRC_BUILT) \
 		$(SRC_EDT) \
 		$(SRC_RLC) \
 		$(SRC_TMP) \
-		$(SRC_PRT)
+		$(SRC_PRT) \
+		$(SRC_ANAL)
 
 OBJ =   *.o
 

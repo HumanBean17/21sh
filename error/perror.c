@@ -36,7 +36,7 @@ static	void	puterr(int code)
 void			ft_error(char const *s1, int code, char const *s2)
 {
 	if (!s1)
-		ft_putstr_fd("minishell: ", STDERR_FILENO);
+		ft_putstr_fd("21sh: ", STDERR_FILENO);
 	else
 	{
 		ft_putstr_fd(s1, STDERR_FILENO);

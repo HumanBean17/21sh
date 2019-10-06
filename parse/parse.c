@@ -66,29 +66,36 @@ void pasteenv(char **com)
 	}
 }
 
-void	ft_parse(int ac, char **command)
+int	check_built(char **command)
 {
-	if (!(ft_strcmp("exit", command[0])))
-		exit(0);
-	else if (!(ft_strcmp("clear", command[0])))
-		write(1, "\e[1;1H\e[2J", 11);
-	else if (!(ft_strcmp("setenv", command[0])))
-		ft_setenv(ac, command);
-	else if (!(ft_strcmp("unsetenv", command[0])))
-		ft_unsetenv(ac, command);
-	else if (!(ft_strcmp("env", command[0])))
-		ft_env(ac, command);
-	else if (!(ft_strcmp("echo", command[0])))
-		ft_echo(&command[1]);
-	else if (!(ft_strcmp("pwd", command[0])))
-		ft_putdir(ac, command);
+    int ac;
+
+    ac = ft_count_str(command);
+    if (!(ft_strcmp("setenv", command[0])))
+        ft_setenv(ac, command);
 	else if (!(ft_strcmp("cd", command[0])))
 		ft_cd(ft_count_str(&command[1]), &command[1]);
-	else
-		ft_execute(command);
+    else if (!(ft_strcmp("unsetenv", command[0])))
+        ft_unsetenv(ac, command);
+    else if (!(ft_strcmp("env", command[0])))
+        ft_env(ac, command);
+    else if (!(ft_strcmp("echo", command[0])))
+        ft_echo(&command[1]);
+    else if (!(ft_strcmp("pwd", command[0])))
+        ft_putdir(ac, command);
+    else
+        return (-1);
+	return (0);
 }
 
 void	ft_do(char *inp)
 {
-
+    t_token *token_list;
+    if (!inp)
+        return ;
+    if (!(strcmp("exit", inp)))
+    	exit (0);
+    token_list = tokenize(inp);
+    /* a place for validation */
+    parse_tree(make_tree(token_list, 0));
 }

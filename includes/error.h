@@ -12,8 +12,6 @@
 
 #ifndef ERROR_H
 # define ERROR_H
-# define ENOMEM 1
-# define EPERM 2
 # define ENOFILE 3
 # define ENOCOM 4
 # define EFEWARGS 5

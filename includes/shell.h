@@ -16,6 +16,9 @@
 # define IS_QUOTE if (q == 0 || q % 2 == 0)
 
 # include <stdlib.h>
+# include "analyzer.h"
+# include <fcntl.h>
+# include <errno.h>
 # include "libft.h"
 # include <string.h>
 # include <unistd.h>
@@ -82,7 +85,8 @@ struct termios		enable_raw(void);
 void	            disable_raw(struct termios orig_termios);
 void                init_edit();
 void	ft_env(int ac, char **com);
-void			ft_parse(int ac, char **av);
+void	        ft_manage_proc(t_tree *node, int fd1);
+int             check_built(char **command);
 char			*ft_pathjoin(char *s1, char *s2);
 void			ft_cd(int ac, char **new_dir);
 void			ft_echo(char **str);
@@ -92,11 +96,11 @@ void			ft_signal();
 int				ft_realloc(char **buf, size_t add_to_buf);
 void			ft_setenv(int ac, char **value);
 void			ft_unsetenv(int ac, char **av);
-void			ft_execute(char **com);
+void			ft_execute(t_tree *leaf, int fd1);
 void			ft_delenv(char *com);
 void			ft_env(int ac, char **com);
 int				add_env(char *env, char *value);
-void			ft_do(char **inp);
+void			ft_do(char *inp);
 char			*search_bin(char *filename, char *path);
 void			free_tab(char **ta, int i);
 int				env_err();
@@ -106,5 +110,6 @@ void			put_all_env(void);
 char			**ft_envcpy(char **environ);
 char			**tmp_env_list(int ac, char **com, int *j);
 int				check_rights(char *fname);
+void			pasteenv(char **com);
 
 #endif

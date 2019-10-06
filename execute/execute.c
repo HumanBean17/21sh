@@ -69,24 +69,90 @@ int		check_rights(char *fname)
 	return (0);
 }
 
-void	ft_execute(char **com)
+void	exec_pipe(t_tree *node, int fd1)
 {
-	char *fname;
+	int fd[2];
 
-	fname = search_bin(com[0], ft_getenv("PATH"));
 	g_pid = fork();
 	if (!g_pid)
 	{
-		if (execve(fname, com, g_environ) < 0)
+		pipe(fd);
+		dup2(fd[0], STDIN_FILENO);
+		close(fd[0]);
+		if (fd1 >= 0)
 		{
-			if (check_rights(fname) < 0)
-				ft_error(0, EPERM, fname);
-			else
-				ft_error(0, ENOCOM, *com);
-			exit(0);
+			dup2(fd1, STDOUT_FILENO);
+			close(fd1);
 		}
+		ft_manage_proc(node->right, fd[1]);
+		close(fd[1]);
+		ft_execute(node->left, -1);
 	}
+}
+
+int	ft_fopen(t_tree *node)
+{
+	struct stat stbuf;
+	int fd;
+
+	if (stat(node->left->val[0], &stbuf) == 0)
+	{
+		if (node->type == TGREAT) {
+			if ((fd = open(node->left->val[0], O_RDWR | O_TRUNC)) < 0)
+				ft_putstr_fd(strerror(errno), 2);
+		}
+		else
+			if ((fd = open(node->left->val[0], O_RDWR | O_APPEND)) < 0)
+				ft_putstr_fd(strerror(errno), 2);
+	}
+	else {
+		if ((fd = open(node->left->val[0], O_CREAT | S_IRWXU | O_RDWR)) < 0)
+			ft_putstr_fd(strerror(errno), 2);
+	}
+	return(fd);
+}
+
+void	make_rdr(t_tree *node, int fd1)
+{
+	int fd;
+
+	//dup2(fd1, STDOUT_FILENO);
+	fd = ft_fopen(node);
+	ft_manage_proc(node->right, fd);
+}
+
+
+void	ft_manage_proc(t_tree *node, int fd1)
+{
+	if (node->type == TPIPE)
+		exec_pipe(node, fd1);
+	else if (node->type != TEXEX)
+		make_rdr(node, fd1);
 	else
-		g_pid = wait(&g_pid);
+	{
+		g_pid = fork();
+		if (!g_pid)
+			ft_execute(node, fd1);
+	}
+}
+
+void	ft_execute(t_tree *leaf, int fd1)
+{
+	char	*fname;
+
+	if (fd1 >= 0)
+	{
+		dup2(fd1, STDOUT_FILENO);
+		close(fd1);
+	}
+	fname = search_bin(leaf->val[0], ft_getenv("PATH"));
+	if (execve(fname, leaf->val, g_environ) < 0)
+	{
+		if (check_rights(fname) < 0)
+			ft_error(0, EPERM, fname);
+		else
+			ft_error(0, ENOCOM, *leaf->val);
+		exit(0);
+	}
 	free(fname);
 }

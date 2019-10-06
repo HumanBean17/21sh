@@ -46,5 +46,7 @@ char				**ft_strtok(char *s);
 void				*ft_memchr(const void *arr, int c, size_t n);
 char				*ft_strcat(char *str1, const char *str2);
 size_t				ft_strclen(char *s, char c);
+char				*ft_strtrim(char const *s);
+char				*ft_strsub(char const *s, unsigned int start, size_t len);
 
 #endif
