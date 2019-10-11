@@ -48,7 +48,7 @@ GCC = gcc
 all: $(OBJ) $(LIB) $(NAME)
 
 $(NAME): $(OBJ)
-	$(GCC) -o $(NAME) -I $(HEADER) $(OBJ) -L. $(LIB) -ltermcap
+	$(GCC) -o $(NAME) -I $(HEADER) $(OBJ) $(LIB) -ltermcap
 
 $(OBJ): $(SRC)
 	gcc -c $(SRC) -I $(HEADER)

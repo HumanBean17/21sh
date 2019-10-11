@@ -13,10 +13,10 @@ void move_back(void)
 	}
 }
 
-void move_promt(int q)
+void move_promt(void)
 {
 	write(STDOUT_FILENO, "\x001b[1000D", ft_strlen("\x001b[1000D"));
-	if (q == 0 || q % 2 == 0)
+	if (g_quote == 0 || g_quote % 2 == 0)
 		promt();
 	else
 		quote();

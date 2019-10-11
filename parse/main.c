@@ -6,13 +6,13 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:21 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/21 10:19:17 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/10/11 13:56:45 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "shell.h"
 
-int ft_loop(t_command **command, int *q)
+int ft_loop(t_command **command)
 {
 	char				buf;
 	static t_command 	*cur;
@@ -40,8 +40,8 @@ int ft_loop(t_command **command, int *q)
 		else if (buf == '\n')
 		{
 			write(STDOUT_FILENO, "\n", 1);
-			(*q) = quote_find(g_line.str);
-			if (*q == 0 || *q % 2 == 0)
+			g_quote = quote_find(g_line.str);
+			if (!g_quote || !(g_quote % 2))
 			{
 				ft_do(g_line.str);
 				cur = new_line(command);
@@ -49,6 +49,7 @@ int ft_loop(t_command **command, int *q)
 			}
 			else
 			{
+                nl_join();
 				g_line.y++;
 				g_line.fix = g_line.x;
 				return (1);
@@ -56,7 +57,7 @@ int ft_loop(t_command **command, int *q)
 		}
 		if (buf == 0)
 			return (0);
-		del_print(*q);
+        del_print();
 	}
 	return (0);
 }
@@ -65,22 +66,21 @@ int	main(int argc, char **argv, char **envp)
 {
     struct 	termios orig_termios;
     t_command		*command;
-    int 			q;
 
 	if (argc > 1)
 		return (0);
 	(void)argv;
 	ft_signal();
+	g_quote = 0;
 	g_environ = ft_envcpy(envp);
     orig_termios = enable_raw();
 	init_edit();
 	term_init();
 	command = NULL;
 	promt();
-	q = 0;
-	while ((ft_loop(&command, &q)))
+	while ((ft_loop(&command)))
 	{
-		if (q % 2 == 0)
+		if (g_quote % 2 == 0)
 			promt();
 		else
 			quote();

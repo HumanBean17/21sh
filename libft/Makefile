@@ -6,7 +6,7 @@
 #    By: mmarti <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/12 14:18:02 by mmarti            #+#    #+#              #
-#    Updated: 2019/09/17 10:11:44 by lcrawn           ###   ########.fr        #
+#    Updated: 2019/10/11 11:24:59 by lcrawn           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CFILE = ft_memalloc.c ft_bzero.c ft_strcat.c ft_strclen.c ft_strwlen.c \
 		ft_putchar_fd.c ft_strlen.c ft_putstr_fd.c ft_count_str.c ft_strtok.c \
 		ft_strwdup.c ft_memchr.c ft_strncmp.c ft_isprint.c \
 		ft_strdel.c ft_strnew.c ft_memset.c ft_strjoin.c ft_strsub.c ft_max.c \
-		ft_itoa.c ft_strsub.c
+		ft_itoa.c ft_strsub.c ft_strequ.c ft_strncpy.c
 
 OFILE = $(CFILE:.c=.o)
 

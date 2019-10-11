@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/11 17:41:30 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/17 10:11:44 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/10/11 11:24:59 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,7 @@ char				*ft_strcat(char *str1, const char *str2);
 size_t				ft_strclen(char *s, char c);
 char				*ft_strtrim(char const *s);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
+int		            ft_strequ(char const *s1, char const *s2);
+char	            *ft_strncpy(char *dst, const char *src, size_t n);
 
 #endif

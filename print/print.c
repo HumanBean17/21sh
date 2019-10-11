@@ -13,20 +13,20 @@ void	promt(void)
 	write(STDOUT_FILENO, "$> ", 3);
 }
 
-void del_print(int q)
+void del_print()
 {
-	move_promt(q);
+    move_promt();
 	tputs(tgetstr("cd", NULL), STDOUT_FILENO, ft_printnbr);
-	if (q == 0 || q % 2 == 0)
+	if (!g_quote || !(g_quote % 2))
 	{
 		write(STDOUT_FILENO, g_line.str, g_line.size);
-		move_promt(q);
+        move_promt();
 		move_back();
 	}
 	else
-	{
-		write(STDOUT_FILENO, g_line.str + g_line.fix, g_line.size - g_line.fix);
-		move_promt(q);
-		move_back();
+    {
+	    write(STDOUT_FILENO, g_line.str + g_line.fix, g_line.size - g_line.fix);
+        move_promt();
+	    move_back();
 	}
 }

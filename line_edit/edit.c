@@ -16,10 +16,9 @@ int insert_ch(char buf)
     {
     	s_buf = char_str(buf);
         tmp = ft_strsub(g_line.str, 0, g_line.x);
-        if (g_line.size - g_line.x > 0)
-        	sub = ft_strsub(g_line.str, g_line.x, g_line.size - g_line.x);
-		else
-			sub = ft_strdup("");
+        sub = g_line.size - g_line.x > 0 ?
+                ft_strsub(g_line.str, g_line.x, g_line.size - g_line.x) :
+                ft_strdup("");
         ft_strdel(&g_line.str);
         g_line.str = ft_strjoin(tmp, s_buf);
         ft_strdel(&tmp);

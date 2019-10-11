@@ -6,35 +6,36 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:13 by mmarti            #+#    #+#             */
-/*   Updated: 2019/09/21 10:00:49 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/10/11 13:17:10 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SHELL_H
 # define SHELL_H
 # define PATH_MAX 1024
-# define IS_QUOTE if (q == 0 || q % 2 == 0)
 
-# include <stdlib.h>
 # include "analyzer.h"
+# include "libft.h"
+# include "error.h"
+
+# include <sys/wait.h>
+# include <sys/stat.h>
+# include <stdlib.h>
 # include <fcntl.h>
 # include <errno.h>
-# include "libft.h"
 # include <string.h>
 # include <unistd.h>
-# include <sys/stat.h>
 # include <dirent.h>
 # include <signal.h>
-# include "error.h"
 # include <termios.h>
-# include <sys/wait.h>
 # include <curses.h>
 # include <term.h>
-#include <stdio.h>
+# include <stdio.h>
 
 pid_t	g_pid;
 char	**g_environ;
 struct  s_line g_line;
+int     g_quote;
 
 typedef struct 	s_command
 {
@@ -61,8 +62,10 @@ typedef struct	s_envfl
 }				t_envfl;
 
 /* edit line funcs */
+void nl_join(void);
+char *cut_fix();
 void	quote(void);
-void del_print(int f);
+void    del_print();
 void		home(void);
 void		end(void);
 int quote_find(const char *str);
@@ -72,7 +75,7 @@ t_command * push_front(t_command **command, char *str);
 void		print_list(t_command *command);
 t_command	*new_command(char *str);
 void	promt(void);
-void move_promt(int f);
+void move_promt();
 char 	*char_str(char c);
 void	delete_ch(void);
 t_command *key_mv(t_command *cur);
