@@ -81,21 +81,6 @@
 //	redirect(tree->right, fdlist);
 //}
 
-int check_built_without_fork(char **command)
-{
-	int ac;
-
-	ac = ft_count_str(command);
-	if (!(ft_strcmp("setenv", command[0])))
-		ft_setenv(ac, command);
-	else if (!(ft_strcmp("cd", command[0])))
-		ft_cd(ft_count_str(&command[1]), &command[1]);
-	else if (!(ft_strcmp("unsetenv", command[0])))
-		ft_unsetenv(ac, command);
-	else
-		return (-1);
-	return (0);
-}
 
 void	parse_tree(t_tree *tree)
 {
@@ -107,7 +92,7 @@ void	parse_tree(t_tree *tree)
 		parse_tree(tree->left);
 	}
 	else{
-		if ((check_built_without_fork(tree->val)) < 0)
+		if ((check_built(tree->val)) < 0)
 			ft_manage_proc(tree, -1);
 	}
 	waitpid(-1, 0, 0);
