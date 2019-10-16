@@ -38,6 +38,8 @@ void get_token_type(t_token *token)
 		else
 			token->type = TGREAT;
 	}
+	else if (*token->val == '<')
+		token->type = TLESS;
 	else
 		token->type = TEXEX;
 }

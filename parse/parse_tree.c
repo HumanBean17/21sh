@@ -93,7 +93,7 @@ void	parse_tree(t_tree *tree)
 	}
 	else{
 		if ((check_built(tree->val)) < 0)
-			ft_manage_proc(tree, -1);
+			ft_manage_proc(tree, -1, -1);
 	}
 	waitpid(-1, 0, 0);
 }

@@ -19,8 +19,11 @@ void	ft_sigint(int sig)
 		write(1, "\n$> ", 4);
 		return ;
 	}
-	kill(g_pid, sig);
-	write(1, "\n", 1);
+	else
+	{
+		kill(g_pid, sig);
+		write(1, "\n", 1);
+	}
 }
 
 void	ft_signal(void)

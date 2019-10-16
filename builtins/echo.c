@@ -14,8 +14,8 @@
 
 void	ft_echo(char **str)
 {
-    write(STDOUT_FILENO, *str, ft_strlen(*str));
-    sleep(5);
+    //write(STDOUT_FILENO, *str, ft_strlen(*str));
+   // sleep(5);
 	while (*str)
 	{
 		ft_putstr_fd(*str, STDOUT_FILENO);

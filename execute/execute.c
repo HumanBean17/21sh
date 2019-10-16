@@ -84,9 +84,9 @@ void	exec_pipe(t_tree *node, int fd1)
 			dup2(fd1, STDOUT_FILENO);
 			close(fd1);
 		}
-		ft_manage_proc(node->right, fd[1]);
+		ft_manage_proc(node->right, fd[1], -1);
 		close(fd[1]);
-		ft_execute(node->left, -1);
+		ft_execute(node->left, -1, -1);
 	}
 }
 
@@ -106,37 +106,48 @@ int	ft_fopen(t_tree *node)
 				ft_putstr_fd(strerror(errno), 2);
 	}
 	else {
+		if (node->type == TLESS)
+		{
+			ft_putstr_fd("No file", STDERR_FILENO);
+			return (-1);
+		}
 		if ((fd = open(node->left->val[0], O_CREAT | S_IRWXU | O_RDWR)) < 0)
 			ft_putstr_fd(strerror(errno), 2);
 	}
 	return(fd);
 }
 
-void	make_rdr(t_tree *node, int fd1)
+void	make_rdr(t_tree *node)
 {
 	int fd;
 
+	//if (node->type == TLESS)
 	//dup2(fd1, STDOUT_FILENO);
+	if (node->type == TLESS)
+		ft_manage_proc(node->right, -1, ft_fopen(node));
 	fd = ft_fopen(node);
-	ft_manage_proc(node->right, fd);
+	ft_manage_proc(node->right, fd, -1);
 }
 
 
-void	ft_manage_proc(t_tree *node, int fd1)
+void	ft_manage_proc(t_tree *node, int fd1, int fd0)
 {
 	if (node->type == TPIPE)
 		exec_pipe(node, fd1);
 	else if (node->type != TEXEX)
-		make_rdr(node, fd1);
+		make_rdr(node);
 	else
 	{
 		g_pid = fork();
 		if (!g_pid)
-			ft_execute(node, fd1);
+		{
+			ft_execute(node, fd1, fd0);
+			exit(0);
+		}
 	}
 }
 
-void	ft_execute(t_tree *leaf, int fd1)
+void	ft_execute(t_tree *leaf, int fd1, int fd0)
 {
 	char	*fname;
 
@@ -144,6 +155,11 @@ void	ft_execute(t_tree *leaf, int fd1)
 	{
 		dup2(fd1, STDOUT_FILENO);
 		close(fd1);
+	}
+	if (fd0 >= 0)
+	{
+		dup2(fd0, STDIN_FILENO);
+		close(fd0);
 	}
 	if ((check_built(leaf->val)) == 0)
 		return ;
@@ -154,7 +170,6 @@ void	ft_execute(t_tree *leaf, int fd1)
 			ft_error(0, EPERM, fname);
 		else
 			ft_error(0, ENOCOM, *leaf->val);
-		exit(0);
 	}
 	free(fname);
 }

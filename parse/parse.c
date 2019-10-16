@@ -66,6 +66,18 @@ void pasteenv(char **com)
 	}
 }
 
+
+//void prtr(t_tree *tree)
+//{
+//	while (tree->right)
+//	{
+//		printf("%s", tree->val[0]);
+//		printf("!!left!!%s", tree->left->val[0]);
+//		printf("!!right!!%s", tree->right->val[0]);
+//		tree = tree->right;
+//	}
+//}
+
 int	check_built(char **command)
 {
     int ac;
@@ -91,6 +103,7 @@ int	check_built(char **command)
 void	ft_do(char *inp)
 {
     t_token *token_list;
+
     if (!inp)
         return ;
     if (!(strcmp("exit", inp)))

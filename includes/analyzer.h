@@ -8,6 +8,7 @@
 # define TPIPE 150
 # define TGREAT 250
 # define TDGREAT 350
+# define TLESS 450
 # define TSEMICOL 101
 
 typedef unsigned short t_type;
