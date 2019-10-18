@@ -74,7 +74,7 @@ char	*ft_pathjoin(char *s1, char *s2)
 		return (0);
 	while (*s1)
 		str[i++] = *s1++;
-	if (*--s1 != '/')
+	if (*(--s1) != '/')
 		str[i++] = '/';
 	while (*s2)
 		str[i++] = *s2++;

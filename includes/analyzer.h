@@ -13,6 +13,13 @@
 
 typedef unsigned short t_type;
 
+typedef struct		s_process
+{
+	char			*proc;
+	int 			fdin;
+	int				fdout;
+}					t_process;
+
 typedef struct		s_token
 {
     t_type			type;
@@ -25,7 +32,6 @@ typedef	struct		s_tree
 	t_type			type;
 	char			**val;
 	struct	s_tree	*left;
-	struct	s_tree	*parent;
 	struct	s_tree	*right;
 }					t_tree;
 

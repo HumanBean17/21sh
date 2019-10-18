@@ -18,6 +18,7 @@
 # include <unistd.h>
 
 char			*ft_itoa(int n);
+int				ft_atoi(const char *str);
 int     ft_min(int a, int b);
 int     ft_max(int a, int b);
 char	*ft_strjoin(char const *s1, char const *s2);

@@ -100,7 +100,6 @@ t_tree	*new_tree_elem(t_token *token, t_tree *parent)
 
 	if (!(elem = (t_tree *)malloc(sizeof(t_tree))))
 		exit(123);
-	elem->parent = parent;
 	elem->type = token->type;
 	elem->val = ft_strtok(token->val);
 	pasteenv(elem->val);
