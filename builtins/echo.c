@@ -14,13 +14,12 @@
 
 void	ft_echo(char **str)
 {
-    //write(STDOUT_FILENO, *str, ft_strlen(*str));
-   // sleep(5);
 	while (*str)
 	{
 		ft_putstr_fd(*str, STDOUT_FILENO);
-		ft_putchar_fd(' ', STDOUT_FILENO);
 		str++;
+		if (*str)
+			ft_putchar_fd(' ', STDOUT_FILENO);
 	}
 	ft_putchar_fd('\n', STDOUT_FILENO);
 }

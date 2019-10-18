@@ -71,6 +71,7 @@ t_token *new_token(char *str)
 	if (!*str)
 		return (0);
 	res = ft_strtrim(str);
+	free(str);
 	if (!res)
 		return (0);
 	if (!(token = (t_token *)malloc(sizeof(t_token))))

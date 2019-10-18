@@ -100,9 +100,35 @@ int	check_built(char **command)
 	return (0);
 }
 
+//void	free_token_list(t_token *list)
+//{
+//	t_token *tmp;
+//
+//	if (!list)
+//		return ;
+//	while (list)
+//	{
+//		tmp = list->next;
+//		//free(list->val);
+//		free(list);
+//		list = tmp;
+//	}
+//}
+
+void	free_tree(t_tree *tree)
+{
+	if (!tree)
+		return ;
+	free_tree(tree->left);
+	free_tree(tree->right);
+	free_tab(tree->val, ft_count_str(tree->val));
+	free(tree);
+}
+
 void	ft_do(char *inp)
 {
     t_token *token_list;
+	t_tree	*tree;
 
     if (!inp)
         return ;
@@ -110,5 +136,7 @@ void	ft_do(char *inp)
     	exit (0);
     token_list = tokenize(inp);
     /* a place for validation */
-    parse_tree(make_tree(token_list, 0));
+    tree = make_tree(token_list, 0);
+    parse_tree(tree);
+    free_tree(tree);
 }

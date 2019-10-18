@@ -38,6 +38,7 @@ void	rmtoken(t_token **token_list, t_token *todel)
 	tmp = *token_list;
 	if (count_tokens(*token_list) == 1)
 	{
+		free((*token_list)->val);
 		free(*token_list);
 		*token_list = 0;
 		return ;
@@ -47,6 +48,7 @@ void	rmtoken(t_token **token_list, t_token *todel)
 		while (tmp->next != todel)
 			tmp = tmp->next;
 	}
+	free(todel->val);
 	free(todel);
 	tmp->next = 0;
 }
