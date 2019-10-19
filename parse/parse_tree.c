@@ -93,9 +93,12 @@ void	parse_tree(t_tree *tree)
 	}
 	else if (tree->type == TEXEX)
 	{
-		g_pid = fork();
-		if (!g_pid)
-			ft_execute(tree, -1);
+		if (check_built(tree->val) < 0)
+		{
+			g_pid = fork();
+			if (!g_pid)
+				ft_execute(tree, -1);
+		}
 	}
 	else
 		ft_manage_proc(tree, -1);
