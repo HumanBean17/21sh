@@ -36,6 +36,7 @@ pid_t	g_pid;
 char	**g_environ;
 struct  s_line g_line;
 int     g_quote;
+int     g_k;
 
 typedef struct 	s_command
 {
@@ -62,6 +63,10 @@ typedef struct	s_envfl
 }				t_envfl;
 
 /* edit line funcs */
+void move_up(void);
+void move_left(void);
+void nl_count(void);
+void move_do(void);
 void nl_join(void);
 char *cut_fix();
 void	quote(void);

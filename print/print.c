@@ -15,18 +15,12 @@ void	promt(void)
 
 void del_print()
 {
+	nl_count();
+	move_up();
     move_promt();
 	tputs(tgetstr("cd", NULL), STDOUT_FILENO, ft_printnbr);
-	if (!g_quote || !(g_quote % 2))
-	{
-		write(STDOUT_FILENO, g_line.str, g_line.size);
-        move_promt();
-		move_back();
-	}
-	else
-    {
-	    write(STDOUT_FILENO, g_line.str + g_line.fix, g_line.size - g_line.fix);
-        move_promt();
-	    move_back();
-	}
+	promt();
+	write(STDOUT_FILENO, g_line.str, g_line.size);
+	move_left();
+	g_k = 0;
 }

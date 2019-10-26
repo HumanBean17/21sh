@@ -1,5 +1,20 @@
 #include "shell.h"
 
+void nl_count(void)
+{
+	int i;
+
+	i = 0;
+	g_line.y = 0;
+	while (g_line.str[i] && i < g_line.x)
+	{
+		if (g_line.str[i] == '\n') {
+			g_line.y++;
+		}
+		i++;
+	}
+}
+
 void nl_join(void)
 {
     char *tmp;

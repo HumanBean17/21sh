@@ -141,6 +141,7 @@ t_command *key_mv(t_command *cur)
 	char 		key_1;
 	char 		key_2;
 
+	g_k = 1;
 	read(STDIN_FILENO, &key_1, 1);
 	read(STDIN_FILENO, &key_2, 1);
 	if (key_1 == 91)
