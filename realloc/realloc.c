@@ -49,7 +49,7 @@ t_command	*new_command(char *str)
 	if (str)
 		tmp->str = ft_strdup(str);
 	else
-		tmp->str = NULL;
+		tmp->str = ft_strdup("");
 	tmp->next = NULL;
 	tmp->prev = NULL;
 	return (tmp);

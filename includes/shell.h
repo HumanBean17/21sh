@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:13 by mmarti            #+#    #+#             */
-/*   Updated: 2019/10/11 13:17:10 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/10/27 12:31:44 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ typedef struct	s_envfl
 
 /* edit line funcs */
 void move_up(void);
+void    check_list(t_command *command);
 void move_right(int to_mv);
 void move_del_print(void);
 void    promt_join(void);
@@ -85,8 +86,8 @@ t_command	*new_command(char *str);
 void	promt(void);
 void move_promt();
 char 	*char_str(char c);
-void	delete_ch(void);
-t_command *key_mv(t_command *cur);
+void delete_ch(t_command *cur);
+t_command *key_mv(t_command *cur, t_command **command);
 int		ft_printnbr(int nbr);
 void	term_init(void);
 void 	move_back(void);

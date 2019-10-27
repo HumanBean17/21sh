@@ -6,11 +6,32 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:21 by mmarti            #+#    #+#             */
-/*   Updated: 2019/10/11 13:56:45 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/10/27 12:25:59 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "shell.h"
+
+void    check_list(t_command *command)
+{
+    t_command *tmp;
+    t_command *lst;
+
+    tmp = command;
+    lst = tmp;
+    while (tmp)
+    {
+        printf("|%s|\n", tmp->str);
+        lst = tmp;
+        tmp = tmp->next;
+    }
+    printf("--------------\n");
+    while (lst)
+    {
+        printf("|%s|\n", lst->str);
+        lst = lst->prev;
+    }
+}
 
 int ft_loop(t_command **command)
 {
@@ -34,17 +55,18 @@ int ft_loop(t_command **command)
 		else if (buf == 6)
 			next_word();
 		else if (buf == 27)
-			cur = key_mv(cur);
+			cur = key_mv(cur, command);
 		else if (buf == 127)
-			delete_ch();
+			delete_ch(cur);
 		else if (buf == '\n')
 		{
 			write(STDOUT_FILENO, "\n", 1);
 			g_quote = quote_find(g_line.str);
-			if (!g_quote || !(g_quote % 2))
+			if (!(g_quote) || !(g_quote % 2))
 			{
 				//ft_do(g_line.str);
 				cur = new_line(command);
+                //check_list(*command);
 				return (1);
 			}
 			else

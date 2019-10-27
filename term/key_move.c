@@ -65,6 +65,7 @@ t_command   *new_line(t_command **command)
 	t_command *tmp;
 
 	tmp = push_front(command, g_line.str);
+	//check_list(*command);
 	ft_strdel(&g_line.str);
 	g_line.size = 0;
 	g_line.x = 0;
@@ -74,43 +75,38 @@ t_command   *new_line(t_command **command)
 	return (tmp);
 }
 
-t_command   *pick_up(t_command *cur)
+t_command *pick_up(t_command *cur, t_command **command)
 {
-	if (cur)
-	{
-		/*move_up();
-		move_promt();
-		tputs(tgetstr("dl", NULL), STDOUT_FILENO, ft_printnbr);
-		promt();*/
-		ft_strdel(&g_line.str);
-		g_line.str = ft_strdup(cur->str);
-        g_line.size = ft_strlen(g_line.str);
-        g_line.x = 0;//g_line.size;
-		if (cur->next)
-			return (cur->next);
-	}
+	if (!cur->prev)
+    	cur = new_line(command);
+	if (cur->next)
+		cur = cur->next;
+	while (cur->next && ft_strequ(cur->str, ""))
+		cur = cur->next;
+    ft_strdel(&g_line.str);
+    g_line.str = ft_strdup(cur->str);
+    g_line.size = ft_strlen(g_line.str);
+    g_line.x = 0;//g_line.size;
+    //if (cur->next)
+    //	return (cur->next);
 	return (cur);
 }
 
 t_command   *pick_down(t_command *cur)
 {
-	if (cur)
-	{
-		/*move_up();
-		move_promt();
-		tputs(tgetstr("dl", NULL), STDOUT_FILENO, ft_printnbr);
-		promt();*/
-		ft_strdel(&g_line.str);
-		g_line.str = ft_strdup(cur->str);
-		g_line.size = ft_strlen(g_line.str);
-		g_line.x = 0;//g_line.size;
-		if (cur->prev)
-			return (cur->prev);
-	}
-	return (cur);
+    t_command *tmp;
+
+    tmp = cur->prev ? cur->prev : cur;
+    while (tmp->prev && ft_strequ(tmp->str, ""))
+    	tmp = tmp->prev;
+    ft_strdel(&g_line.str);
+    g_line.str = ft_strdup(tmp->str);
+    g_line.size = ft_strlen(g_line.str);
+    g_line.x = 0;//g_line.size;
+    return (tmp);
 }
 
-t_command *key_mv(t_command *cur)
+t_command *key_mv(t_command *cur, t_command **command)
 {
 	char 		key_1;
 	char 		key_2;
@@ -126,28 +122,36 @@ t_command *key_mv(t_command *cur)
 		else if (key_2 == 67 && g_line.x < g_line.size) // RIGHT
 			g_line.x++;
 		else if (key_2 == 65) { // UP
-			ret = pick_up(cur);
-			if (ret != cur)
+			ret = pick_up(cur, command);
+			/*if (ret != cur)
 			{
-				//sleep(3);
-				move_del_print();
+				//sleep(2);
+                move_promt();
+                tputs(tgetstr("dl", NULL), STDOUT_FILENO, ft_printnbr);
+                promt();
+                //sleep(2);
 				write(STDOUT_FILENO, g_line.str, g_line.size);
-				//move_right((int)g_line.size - g_line.x);
-				//sleep(3);
-			}
+                //sleep(2);
+				move_promt();
+			}*/
+            //printf("%s\n", ret->str);
+			//sleep(3);
 			return ret;
 		}
 		else if (key_2 == 66) { // DOWN
 			ret = pick_down(cur);
-			if (ret != cur)
+			/*if (ret != cur)
 			{
-				//sleep(3);
-				move_del_print();
-				write(STDOUT_FILENO, g_line.str, g_line.size);
-				//move_right((int)g_line.size - g_line.x);
-				//sleep(3);
-			}
-			return (ret);
+                //sleep(2);
+                move_promt();
+                tputs(tgetstr("dl", NULL), STDOUT_FILENO, ft_printnbr);
+                promt();
+                //sleep(2);
+                write(STDOUT_FILENO, g_line.str, g_line.size);
+                //sleep(2);
+                move_promt();
+			}*/
+			return ret;
 		}
 	}
 	return (cur);

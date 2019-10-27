@@ -1,6 +1,6 @@
 #include "shell.h"
 
-void	delete_ch(void)
+void delete_ch(t_command *cur)
 {
 	char *tmp;
 	char *sub;
@@ -14,9 +14,12 @@ void	delete_ch(void)
 			sub = ft_strdup("");
 		ft_strdel(&g_line.str);
 		g_line.str = ft_strjoin(tmp, sub);
+		ft_strdel(&cur->str);
 		ft_strdel(&tmp);
 		ft_strdel(&sub);
+		cur->str = ft_strdup(g_line.str);
 		g_line.x--;
 		g_line.size--;
+
 	}
 }
