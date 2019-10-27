@@ -70,8 +70,6 @@ t_command   *new_line(t_command **command)
 	g_line.size = 0;
 	g_line.x = 0;
 	g_line.y = 0;
-	g_line.lst = 0;
-	g_line.fix = 0;
 	return (tmp);
 }
 
@@ -84,7 +82,7 @@ t_command *pick_up(t_command *cur, t_command **command)
     ft_strdel(&g_line.str);
     g_line.str = ft_strdup(cur->str);
     g_line.size = ft_strlen(g_line.str);
-    g_line.x = 0;//g_line.size;
+    g_line.x = g_line.size;
     g_quote = quote_find(g_line.str);
 	return (cur);
 }
@@ -99,7 +97,7 @@ t_command   *pick_down(t_command *cur)
     ft_strdel(&g_line.str);
     g_line.str = ft_strdup(tmp->str);
     g_line.size = ft_strlen(g_line.str);
-    g_line.x = 0;//g_line.size;
+    g_line.x = g_line.size;
 	g_quote = quote_find(g_line.str);
     return (tmp);
 }
@@ -124,12 +122,11 @@ t_command *key_mv(t_command *cur, t_command **command)
 			if (!cur->prev)
 				cur = new_line(command);
 			g_quote = quote_find(cur->str);
-			if ((g_quote || (g_quote % 2)))
+			if (g_quote || g_quote % 2)
 			{
 				y = nl_count(cur->str, ft_strlen(cur->str));
 				move_up(y);
 				move_del();
-				//move_left((int)g_line.size - g_line.x);
 			}
 			ret = pick_up(cur, command);
 			g_quote = quote_find(g_line.str);
@@ -142,12 +139,11 @@ t_command *key_mv(t_command *cur, t_command **command)
 		}
 		else if (key_2 == 66) { // DOWN
 			g_quote = quote_find(cur->str);
-			if ((g_quote || (g_quote % 2)))
+			if (g_quote || g_quote % 2)
 			{
 				y = nl_count(cur->str, ft_strlen(cur->str));
 				move_up(y);
 				move_del();
-				//move_left((int)g_line.size - g_line.x);
 			}
 			ret = pick_down(cur);
 			g_quote = quote_find(g_line.str);

@@ -16,7 +16,7 @@ void	print_promt(void)
 void move_del(void)
 {
 	move_promt();
-	tputs(tgetstr("dl", NULL), STDOUT_FILENO, ft_printnbr);
+	tputs(tgetstr("cd", NULL), STDOUT_FILENO, ft_printnbr);
 	print_promt();
 }
 

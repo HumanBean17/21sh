@@ -5,7 +5,7 @@ void delete_ch(t_command *cur)
 	char *tmp;
 	char *sub;
 
-	if (g_line.x - g_line.fix > 0)
+	if (g_line.x > 0 && g_line.str[g_line.x - 1] != '\n')
 	{
 		tmp = ft_strsub(g_line.str, 0, g_line.x - 1);
 		if (g_line.size - g_line.x > 0)

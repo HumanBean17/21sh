@@ -18,11 +18,6 @@ void move_right(int to_mv)
 	}
 }
 
-void move_back(void)
-{
-	move_right(g_line.x - g_line.fix);
-}
-
 void move_left(int limit)
 {
 	while (limit > 0)

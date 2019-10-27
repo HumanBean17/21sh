@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:21 by mmarti            #+#    #+#             */
-/*   Updated: 2019/10/27 12:25:59 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/10/27 14:39:54 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,12 +72,11 @@ int ft_loop(t_command **command)
 			else
 			{
 				nl_join();
-				g_line.fix = g_line.x;
 			}
 		}
 		if (buf == 0)
 			return (0);
-		g_line.x = g_line.size;
+		//g_line.x = g_line.size;
         del_print();
 	}
 	return (0);

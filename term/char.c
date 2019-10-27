@@ -23,6 +23,22 @@ void    promt_join(void)
 	ft_strdel(&tmp);
 }
 
+int nl_index(const char *str, int limit)
+{
+	int i;
+	int ind;
+
+	i = 0;
+	ind = 0;
+	while (str[i] && i < limit)
+	{
+		if (str[i] == '\n')
+			ind = i;
+		i++;
+	}
+	return (ind);
+}
+
 int nl_count(const char *str, int limit)
 {
 	int i;
