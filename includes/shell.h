@@ -6,7 +6,7 @@
 /*   By: mmarti <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:16:13 by mmarti            #+#    #+#             */
-/*   Updated: 2019/10/27 12:31:44 by lcrawn           ###   ########.fr       */
+/*   Updated: 2019/10/27 13:59:23 by lcrawn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,13 +63,13 @@ typedef struct	s_envfl
 }				t_envfl;
 
 /* edit line funcs */
-void move_up(void);
+void move_up(int limit);
 void    check_list(t_command *command);
 void move_right(int to_mv);
-void move_del_print(void);
+void move_del(void);
 void    promt_join(void);
-void move_left(void);
-void nl_count(void);
+void move_left(int limit);
+int nl_count(const char *str, int limit);
 void move_do(void);
 void nl_join(void);
 char *cut_fix();
@@ -83,7 +83,7 @@ void		prev_word(void);
 t_command * push_front(t_command **command, char *str);
 void		print_list(t_command *command);
 t_command	*new_command(char *str);
-void	promt(void);
+void	print_promt(void);
 void move_promt();
 char 	*char_str(char c);
 void delete_ch(t_command *cur);

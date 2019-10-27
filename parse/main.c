@@ -98,9 +98,9 @@ int	main(int argc, char **argv, char **envp)
 	init_edit();
 	term_init();
 	command = NULL;
-	promt();
+	print_promt();
 	while (ft_loop(&command))
-		promt();
+		print_promt();
 	disable_raw(orig_termios);
 	free_tab(g_environ, ft_count_str(g_environ));
 	return (0);

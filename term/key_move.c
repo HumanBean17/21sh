@@ -77,8 +77,6 @@ t_command   *new_line(t_command **command)
 
 t_command *pick_up(t_command *cur, t_command **command)
 {
-	if (!cur->prev)
-    	cur = new_line(command);
 	if (cur->next)
 		cur = cur->next;
 	while (cur->next && ft_strequ(cur->str, ""))
@@ -87,8 +85,7 @@ t_command *pick_up(t_command *cur, t_command **command)
     g_line.str = ft_strdup(cur->str);
     g_line.size = ft_strlen(g_line.str);
     g_line.x = 0;//g_line.size;
-    //if (cur->next)
-    //	return (cur->next);
+    g_quote = quote_find(g_line.str);
 	return (cur);
 }
 
@@ -103,6 +100,7 @@ t_command   *pick_down(t_command *cur)
     g_line.str = ft_strdup(tmp->str);
     g_line.size = ft_strlen(g_line.str);
     g_line.x = 0;//g_line.size;
+	g_quote = quote_find(g_line.str);
     return (tmp);
 }
 
@@ -111,6 +109,7 @@ t_command *key_mv(t_command *cur, t_command **command)
 	char 		key_1;
 	char 		key_2;
 	t_command   *ret;
+	int 		y;
 
 	read(STDIN_FILENO, &key_1, 1);
 	read(STDIN_FILENO, &key_2, 1);
@@ -122,35 +121,41 @@ t_command *key_mv(t_command *cur, t_command **command)
 		else if (key_2 == 67 && g_line.x < g_line.size) // RIGHT
 			g_line.x++;
 		else if (key_2 == 65) { // UP
-			ret = pick_up(cur, command);
-			/*if (ret != cur)
+			if (!cur->prev)
+				cur = new_line(command);
+			g_quote = quote_find(cur->str);
+			if ((g_quote || (g_quote % 2)))
 			{
-				//sleep(2);
-                move_promt();
-                tputs(tgetstr("dl", NULL), STDOUT_FILENO, ft_printnbr);
-                promt();
-                //sleep(2);
+				y = nl_count(cur->str, ft_strlen(cur->str));
+				move_up(y);
+				move_del();
+				//move_left((int)g_line.size - g_line.x);
+			}
+			ret = pick_up(cur, command);
+			g_quote = quote_find(g_line.str);
+			if (g_quote || g_quote % 2)
+			{
+				move_del();
 				write(STDOUT_FILENO, g_line.str, g_line.size);
-                //sleep(2);
-				move_promt();
-			}*/
-            //printf("%s\n", ret->str);
-			//sleep(3);
+			}
 			return ret;
 		}
 		else if (key_2 == 66) { // DOWN
-			ret = pick_down(cur);
-			/*if (ret != cur)
+			g_quote = quote_find(cur->str);
+			if ((g_quote || (g_quote % 2)))
 			{
-                //sleep(2);
-                move_promt();
-                tputs(tgetstr("dl", NULL), STDOUT_FILENO, ft_printnbr);
-                promt();
-                //sleep(2);
-                write(STDOUT_FILENO, g_line.str, g_line.size);
-                //sleep(2);
-                move_promt();
-			}*/
+				y = nl_count(cur->str, ft_strlen(cur->str));
+				move_up(y);
+				move_del();
+				//move_left((int)g_line.size - g_line.x);
+			}
+			ret = pick_down(cur);
+			g_quote = quote_find(g_line.str);
+			if (g_quote || g_quote % 2)
+			{
+				move_del();
+				write(STDOUT_FILENO, g_line.str, g_line.size);
+			}
 			return ret;
 		}
 	}

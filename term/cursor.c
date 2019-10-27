@@ -1,14 +1,11 @@
 #include "shell.h"
 
-void move_up(void)
+void move_up(int limit)
 {
-	int y;
-
-	y = g_line.y;
-	while (y > 0)
+	while (limit > 0)
 	{
 		tputs(tgetstr("up", NULL), STDOUT_FILENO, ft_printnbr);
-		y--;
+		limit--;
 	}
 }
 
@@ -26,15 +23,12 @@ void move_back(void)
 	move_right(g_line.x - g_line.fix);
 }
 
-void move_left(void)
+void move_left(int limit)
 {
-	int i;
-
-	i = (int)g_line.size - g_line.x;
-	while (i > 0)
+	while (limit > 0)
 	{
 		tputs(tgetstr("le", NULL), STDOUT_FILENO, ft_printnbr);
-		i--;
+		limit--;
 	}
 }
 

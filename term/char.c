@@ -10,7 +10,7 @@ void    promt_join(void)
 		return ;
 	}
 	/*sleep(2);
-	move_del_print();
+	move_del();
 	sleep(2);*/
 	tmp = ft_strdup(g_line.str);
 	ft_strdel(&g_line.str);
@@ -18,24 +18,25 @@ void    promt_join(void)
 	g_line.x += 3;
 	g_line.size += 3;
 	/*sleep(2);
-	move_del_print();
+	move_del();
 	sleep(2);*/
 	ft_strdel(&tmp);
 }
 
-void nl_count(void)
+int nl_count(const char *str, int limit)
 {
 	int i;
+	int y;
 
 	i = 0;
-	g_line.y = 0;
-	while (g_line.str[i] && i < g_line.x)
+	y = 0;
+	while (str[i] && i < limit)
 	{
-		if (g_line.str[i] == '\n') {
-			g_line.y++;
-		}
+		if (str[i] == '\n')
+			y++;
 		i++;
 	}
+	return (y);
 }
 
 void nl_join(void)
@@ -48,16 +49,6 @@ void nl_join(void)
     ft_strdel(&tmp);
     g_line.x++;
     g_line.size++;
-}
-
-char *cut_fix(void)
-{
-    char *str;
-
-    str = ft_strnew(g_line.fix);
-    ft_strncpy(str, g_line.str, g_line.fix);
-    ft_strdel(&g_line.str);
-    return (str);
 }
 
 int     quote_find(const char *str)
