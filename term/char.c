@@ -1,5 +1,28 @@
 #include "shell.h"
 
+void    promt_join(void)
+{
+	char *tmp;
+
+	if (g_line.size > 3 &&
+	g_line.str[0] == '$' && g_line.str[1] == '>' &&
+	g_line.str[2] == ' ') {
+		return ;
+	}
+	/*sleep(2);
+	move_del_print();
+	sleep(2);*/
+	tmp = ft_strdup(g_line.str);
+	ft_strdel(&g_line.str);
+	g_line.str = ft_strjoin("$> ", tmp);
+	g_line.x += 3;
+	g_line.size += 3;
+	/*sleep(2);
+	move_del_print();
+	sleep(2);*/
+	ft_strdel(&tmp);
+}
+
 void nl_count(void)
 {
 	int i;

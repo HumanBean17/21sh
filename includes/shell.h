@@ -36,7 +36,6 @@ pid_t	g_pid;
 char	**g_environ;
 struct  s_line g_line;
 int     g_quote;
-int     g_k;
 
 typedef struct 	s_command
 {
@@ -51,6 +50,7 @@ struct  s_line
     char            *str;
     size_t          size;
     int 			fix;
+    int             lst;
     int        		x;
     int 			y;
 };
@@ -64,6 +64,9 @@ typedef struct	s_envfl
 
 /* edit line funcs */
 void move_up(void);
+void move_right(int to_mv);
+void move_del_print(void);
+void    promt_join(void);
 void move_left(void);
 void nl_count(void);
 void move_do(void);

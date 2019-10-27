@@ -43,20 +43,19 @@ int ft_loop(t_command **command)
 			g_quote = quote_find(g_line.str);
 			if (!g_quote || !(g_quote % 2))
 			{
-				ft_do(g_line.str);
+				//ft_do(g_line.str);
 				cur = new_line(command);
 				return (1);
 			}
 			else
 			{
-                nl_join();
-				g_line.y++;
+				nl_join();
 				g_line.fix = g_line.x;
-				return (1);
 			}
 		}
 		if (buf == 0)
 			return (0);
+		g_line.x = g_line.size;
         del_print();
 	}
 	return (0);
@@ -78,13 +77,8 @@ int	main(int argc, char **argv, char **envp)
 	term_init();
 	command = NULL;
 	promt();
-	while ((ft_loop(&command)))
-	{
-		if (g_quote % 2 == 0)
-			promt();
-		else
-			quote();
-	}
+	while (ft_loop(&command))
+		promt();
 	disable_raw(orig_termios);
 	free_tab(g_environ, ft_count_str(g_environ));
 	return (0);
